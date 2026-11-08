@@ -13,7 +13,7 @@ Plan of record: `~/Downloads/Three-Blog Portfolio Plan.pdf` (direction, not spec
 All three launch together; Gable & Green is where the engine gets built first.
 
 ## Accounts — this repo is the BLOG HUB identity, not Hangkind
-- GitHub: hub account `HUB_GITHUB_USERNAME` (fill in). Run `gh auth switch -u HUB_GITHUB_USERNAME` before any `gh` command here.
+- GitHub: hub account `blogandchill-dev` (fill in). Run `gh auth switch -u blogandchill-dev` before any `gh` command here.
 - Git pushes use the SSH alias `github-blogs` (key `~/.ssh/id_ed25519_blogs`), so they cannot go out as the wrong account.
 - Supabase, Cloudflare, API keys: all under the hub Gmail. Secrets live in `.env` files (gitignored) and the Cloudflare task environment — never in prompts or committed files.
 
