@@ -1,18 +1,55 @@
 ---
 import Base from '../layouts/Base.astro';
-import { getSite, getPublishedPosts } from '../lib/site';
+import PostCard from '../components/PostCard.astro';
+import { getSite, getPublishedPosts, placeholderTone } from '../lib/site';
 const site = await getSite();
-const posts = await getPublishedPosts(30);
+const posts = await getPublishedPosts(40);
+const [lead, ...others] = posts;
+const nav = site.niche_plan.nav ?? [];
 ---
 <Base description={site.tagline ?? undefined}>
-  <h1>Latest</h1>
-  {posts.length === 0 && <p>Nothing published yet.</p>}
-  <ul class="post-list">
-    {posts.map(p => (
-      <li>
-        <h2><a href={`/${p.slug}`}>{p.title}</a></h2>
-        {p.excerpt && <p>{p.excerpt}</p>}
-      </li>
-    ))}
-  </ul>
+  <section class="wrap" style="padding-top:40px;display:flex;flex-direction:column;gap:22px">
+    <div style="display:flex;flex-direction:column;gap:12px;max-width:760px">
+      <h1>Ideas sized to the space you <em style="font-weight:400">actually</em> have.</h1>
+      <p style="font-size:18px;line-height:1.55;color:var(--muted)">Patios, balconies, small yards and small apartments — every idea with dimensions, a price, and a rental-friendly version. Start with your space.</p>
+    </div>
+    <div style="display:flex;flex-wrap:wrap;gap:8px">
+      {nav.map((n, i) => <a class={`pill ${i === 0 ? 'pill--ink' : ''}`} href={n.href} style="padding:12px 18px;font-size:14px">{n.label}</a>)}
+    </div>
+  </section>
+
+  {lead ? (
+    <section class="wrap" style="padding-top:36px">
+      <div class="grid" style="grid-template-columns:repeat(12,minmax(0,1fr))">
+        <div style="grid-column:span 7">
+          <PostCard post={lead} i={0} ratio="16 / 10" />
+        </div>
+        <div style="grid-column:span 5" class="grid grid--2" >
+          {others.slice(0, 4).map((p, i) => <PostCard post={p} i={i + 1} ratio="1 / 1" />)}
+        </div>
+      </div>
+    </section>
+  ) : (
+    <section class="wrap" style="padding-top:36px"><p class="small">First posts are on their way.</p></section>
+  )}
+
+  {others.length > 4 && (
+    <section class="wrap" style="padding-top:56px;display:flex;flex-direction:column;gap:18px">
+      <div style="display:flex;align-items:baseline;justify-content:space-between;gap:16px;flex-wrap:wrap">
+        <h2 style="font-size:30px">Latest</h2>
+      </div>
+      <div class="grid grid--3">{others.slice(4, 13).map((p, i) => <PostCard post={p} i={i} boxed />)}</div>
+    </section>
+  )}
+
+  <section class="wrap" style="padding-top:56px">
+    <div class="panel" style="padding:44px;display:flex;flex-wrap:wrap;gap:32px;align-items:center">
+      <div style="flex:1 1 360px;display:flex;flex-direction:column;gap:12px">
+        <span class="pill pill--white" style="align-self:flex-start;padding:6px 12px;font-size:12px">Coming soon</span>
+        <div style="font-family:var(--font-display),serif;font-weight:500;font-size:clamp(28px,3.5vw,40px);line-height:1.05;letter-spacing:-.015em">Lay out your patio or balcony before you buy a thing</div>
+        <p style="font-size:16px;line-height:1.55;color:var(--muted)">Printable templates to scale for common footprints, a furniture size table, shopping checklists by budget, and a measuring guide.</p>
+      </div>
+      <div style="flex:1 1 320px;aspect-ratio:4 / 3;border-radius:var(--radius);background:#D8D1C4"></div>
+    </div>
+  </section>
 </Base>

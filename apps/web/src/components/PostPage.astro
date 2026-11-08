@@ -1,0 +1,107 @@
+---
+import Base from '../layouts/Base.astro';
+import PostBody from './PostBody.astro';
+import PostCard from './PostCard.astro';
+import LeadMagnet from './LeadMagnet.astro';
+import { getSite, getPublishedPosts, getAuthors, readMinutes, typeLabel, placeholderTone } from '../lib/site';
+import type { Post } from '../lib/site';
+
+const { post, related: relatedIn, noindex = false } = Astro.props as { post: Post; related?: Post[]; noindex?: boolean };
+const site = await getSite();
+const authors = await getAuthors();
+const author = authors.find(a => a.id === post.author_id) ?? authors.find(a => a.is_editor);
+const related = relatedIn ?? (await getPublishedPosts(200)).filter(p => p.id !== post.id).slice(0, 3);
+
+const blocks = post.body ?? [];
+const lede = blocks[0]?.type === 'p' ? (blocks[0] as any).text as string : null;
+const rest = lede ? blocks.slice(1) : blocks;
+const hero = rest.find(b => b.type === 'image_slot') as any;
+const body = hero ? rest.filter(b => b !== hero) : rest;
+const minutes = readMinutes(blocks);
+const sections = body.filter(b => b.type === 'h2').map(b => (b as any).text as string);
+const ideaHeads = sections.filter(t => !/^(what to skip|questions|faq|frequently)/i.test(t));
+const updated = new Date(post.updated_at).toLocaleDateString('en-US', { month: 'long', year: 'numeric' });
+const pills = (post.meta?.pills as string[] | undefined) ?? [];
+const rentalFriendly = blocks.some(b => b.type === 'callout' && /rental/i.test(b.label));
+const url = `https://${site.domain}/${post.slug}`;
+const pinHref = `https://www.pinterest.com/pin/create/button/?url=${encodeURIComponent(url)}&description=${encodeURIComponent(post.title)}`;
+
+const jsonld: any[] = [{
+  '@context': 'https://schema.org', '@type': 'Article',
+  headline: post.title, description: post.excerpt ?? undefined,
+  datePublished: post.published_at ?? undefined, dateModified: post.updated_at,
+  author: { '@type': author?.is_editor ? 'Organization' : 'Person', name: author?.name ?? site.name },
+  publisher: { '@type': 'Organization', name: site.name, url: `https://${site.domain}` },
+  mainEntityOfPage: url,
+}];
+const faqs: { q: string; a: string }[] = [];
+let inFaq = false, q = '';
+for (const b of blocks) {
+  if (b.type === 'h2') inFaq = /^(questions|faq|frequently)/i.test(b.text);
+  else if (inFaq && b.type === 'h3') q = b.text;
+  else if (inFaq && b.type === 'p' && q) { faqs.push({ q, a: b.text }); q = ''; }
+}
+if (faqs.length) jsonld.push({
+  '@context': 'https://schema.org', '@type': 'FAQPage',
+  mainEntity: faqs.map(f => ({ '@type': 'Question', name: f.q, acceptedAnswer: { '@type': 'Answer', text: f.a } })),
+});
+---
+<Base title={post.title} description={post.excerpt ?? undefined} type="article" jsonld={jsonld} image={hero?.src ?? undefined} noindex={noindex}>
+  <article class="reading" style="padding-top:40px;display:flex;flex-direction:column;gap:26px">
+    <div style="display:flex;flex-wrap:wrap;gap:8px">
+      <span class="pill">{typeLabel(post.type)}</span>
+      {pills.map(p => <span class="pill pill--line">{p}</span>)}
+      {rentalFriendly && <span class="pill pill--info">Rental-friendly</span>}
+    </div>
+    <h1>{post.title}</h1>
+    <div style="display:flex;align-items:center;gap:12px;font-size:14px;color:var(--muted)">
+      <div style="width:36px;height:36px;border-radius:50%;background:var(--sand);flex-shrink:0"></div>
+      <div><a href="/about" style="font-weight:700;color:var(--ink)">{author?.name ?? site.name}</a> · Updated {updated} · {minutes} min read</div>
+    </div>
+    {hero && (
+      <figure style="margin:0">
+        <div class="media" style={`aspect-ratio:16 / 10;background:${placeholderTone(0)}`}>
+          {hero.src && <img src={hero.src} alt={hero.alt} width="1200" height="750" fetchpriority="high" />}
+          {pills[0] && <span class="pill pill--sm pill--white">{pills[0]}</span>}
+        </div>
+        {hero.caption && <figcaption class="caption">{hero.caption}</figcaption>}
+      </figure>
+    )}
+    {lede && <p class="lede" style="font-family:var(--font-display),serif;font-size:23px;line-height:1.5">{lede}</p>}
+    <div style="display:flex;flex-wrap:wrap;gap:10px;align-items:center">
+      <a class="btn btn--accent" href={pinHref} rel="nofollow noopener" target="_blank">Save to Pinterest</a>
+      {post.type === 'ideas' && <a class="btn btn--ink" href="#list">Jump to the list ↓</a>}
+    </div>
+    {post.type === 'ideas' && ideaHeads.length > 3 && (
+      <div class="panel" style="padding:18px 22px;display:flex;flex-direction:column;gap:10px">
+        <div style="font-size:11px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)">In this post</div>
+        <div style="display:flex;flex-wrap:wrap;gap:8px">
+          {ideaHeads.slice(0, 6).map((t, i) => <a class="pill pill--white" href={`#s${i + 1}`} style="padding:7px 13px">{i + 1} · {t.length > 26 ? t.slice(0, 24) + '…' : t}</a>)}
+          {ideaHeads.length > 6 && <span class="pill pill--white" style="padding:7px 13px">+{ideaHeads.length - 6} more</span>}
+          <a class="pill pill--white" href="#skip" style="padding:7px 13px">What to skip</a>
+        </div>
+      </div>
+    )}
+    <div class="ad" style="height:100px" aria-label="Advertisement">Advertisement</div>
+    <div id="list"></div>
+    <PostBody blocks={body} numbered={post.type === 'ideas'} />
+    <LeadMagnet />
+    <div style="border:1px solid var(--line);border-radius:var(--radius-lg);padding:20px 24px;display:flex;gap:18px;align-items:center;flex-wrap:wrap">
+      <div style="width:60px;height:60px;border-radius:50%;background:var(--sand);flex-shrink:0"></div>
+      <div style="flex:1 1 320px;display:flex;flex-direction:column;gap:4px">
+        <div style="font-family:var(--font-display),serif;font-weight:500;font-size:19px">{author?.name ?? site.name}</div>
+        <p class="small">{author?.bio ?? `Ideas and sizing posts are written by the ${site.name} editorial team and checked against manufacturer specs. Buying guides carry a named author.`} <a href="/editorial-policy">How we work</a>.</p>
+      </div>
+    </div>
+    {related.length > 0 && (
+      <section style="display:flex;flex-direction:column;gap:16px">
+        <h2 style="font-size:26px">Keep going</h2>
+        <div class="grid grid--3" style="gap:16px">{related.map((p, i) => <PostCard post={p} i={i + 1} />)}</div>
+      </section>
+    )}
+  </article>
+  <div class="sticky-bar">
+    <a class="btn btn--accent" href={pinHref} rel="nofollow noopener" target="_blank">Save</a>
+    <a class="btn btn--line" href="#list">Jump to list</a>
+  </div>
+</Base>

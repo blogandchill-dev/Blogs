@@ -1,40 +1,52 @@
 ---
+import '../styles/global.css';
 import { getSite } from '../lib/site';
+import Header from '../components/Header.astro';
+import Footer from '../components/Footer.astro';
+
 const site = await getSite();
 const t = site.design_tokens;
-const { title, description } = Astro.props as { title?: string; description?: string };
-const fonts = [t.font_heading, t.font_body].map(f => `family=${encodeURIComponent(f)}:wght@400;600;700`).join('&');
+const { title, description, image, type = 'website', jsonld, noindex = false } = Astro.props as {
+  title?: string; description?: string; image?: string; type?: string; jsonld?: unknown; noindex?: boolean;
+};
+const canonical = new URL(Astro.url.pathname, Astro.site).toString();
+const fullTitle = title ? `${title} · ${site.name}` : `${site.name} — ${site.tagline ?? ''}`.trim();
+const fontHref = `https://fonts.googleapis.com/css2?family=${encodeURIComponent(t.font_display)}:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400&family=${encodeURIComponent(t.font_ui)}:wght@400;500;600;700;800&display=swap`;
 ---
 <!doctype html>
 <html lang="en">
   <head>
     <meta charset="utf-8" />
     <meta name="viewport" content="width=device-width, initial-scale=1" />
-    <title>{title ? `${title} · ${site.name}` : site.name}</title>
+    <title>{fullTitle}</title>
     {description && <meta name="description" content={description} />}
-    <link rel="canonical" href={new URL(Astro.url.pathname, Astro.site)} />
+    <link rel="canonical" href={canonical} />
+    {noindex && <meta name="robots" content="noindex, nofollow" />}
+    <meta property="og:site_name" content={site.name} />
+    <meta property="og:title" content={title ?? site.name} />
+    {description && <meta property="og:description" content={description} />}
+    <meta property="og:type" content={type} />
+    <meta property="og:url" content={canonical} />
+    {image && <meta property="og:image" content={image} />}
+    <meta name="twitter:card" content={image ? 'summary_large_image' : 'summary'} />
+    <meta name="pinterest-rich-pin" content="true" />
+    <link rel="alternate" type="application/rss+xml" title={site.name} href="/rss.xml" />
+    <link rel="sitemap" href="/sitemap-index.xml" />
     <link rel="preconnect" href="https://fonts.googleapis.com" />
-    <link rel="stylesheet" href={`https://fonts.googleapis.com/css2?${fonts}&display=swap`} />
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
+    <link rel="stylesheet" href={fontHref} />
     <style define:vars={{
-      fontHeading: `"${t.font_heading}", serif`, fontBody: `"${t.font_body}", sans-serif`,
-      bg: t.bg, fg: t.fg, accent: t.accent, accent2: t.accent_2, radius: t.radius,
-    }}>
-      :root { --font-heading: var(--fontHeading); --font-body: var(--fontBody);
-              --bg: var(--bg); --fg: var(--fg); --accent: var(--accent); --accent-2: var(--accent2); --radius: var(--radius); }
-    </style>
-    <link rel="stylesheet" href="/styles/base.css" />
+      'font-display': t.font_display, 'font-ui': t.font_ui,
+      paper: t.paper, ink: t.ink, muted: t.muted, line: t.line,
+      accent: t.accent, 'accent-ink': t.accent_ink, info: t.info, 'info-tint': t.info_tint,
+      sand: t.sand, 'warn-tint': t.warn_tint, 'warn-ink': t.warn_ink,
+      'radius-sm': t.radius_sm, radius: t.radius, 'radius-lg': t.radius_lg,
+    }}>:root{}</style>
+    {jsonld && <script type="application/ld+json" set:html={JSON.stringify(jsonld)} />}
   </head>
   <body data-layout={site.layout_variant}>
-    <header class="site-header">
-      <a class="brand" href="/">{site.name}</a>
-      {site.tagline && <p class="tagline">{site.tagline}</p>}
-    </header>
+    <Header />
     <main><slot /></main>
-    <footer class="site-footer">
-      <nav>
-        <a href="/about">About</a> · <a href="/contact">Contact</a> · <a href="/editorial-policy">Editorial policy</a> · <a href="/disclosure">Disclosure</a> · <a href="/privacy">Privacy</a>
-      </nav>
-      <p>© {new Date().getFullYear()} {site.name}</p>
-    </footer>
+    <Footer />
   </body>
 </html>

@@ -1,0 +1,67 @@
+---
+import Base from '../layouts/Base.astro';
+import PostCard from '../components/PostCard.astro';
+import PostPage from '../components/PostPage.astro';
+import { getSite, getPublishedPosts, getClusters } from '../lib/site';
+import type { Post, NavItem } from '../lib/site';
+import { legalPages } from '../lib/legal';
+
+// One top-level dynamic route serves posts, category pages and trust pages.
+export async function getStaticPaths() {
+  const site = await getSite();
+  const posts = await getPublishedPosts(2000);
+  const legal = legalPages(site);
+  const nav = site.niche_plan.nav ?? [];
+  return [
+    ...posts.map(p => ({ params: { slug: p.slug }, props: { kind: 'post', post: p } })),
+    ...Object.keys(legal).map(slug => ({ params: { slug }, props: { kind: 'legal', slug } })),
+    ...nav.map(n => ({ params: { slug: n.href.replace(/^\//, '') }, props: { kind: 'category', nav: n } })),
+    { params: { slug: 'planner' }, props: { kind: 'planner' } },
+  ];
+}
+const props = Astro.props as { kind: 'post'; post: Post } | { kind: 'legal'; slug: string } | { kind: 'category'; nav: NavItem } | { kind: 'planner' };
+const site = await getSite();
+
+let legal: { title: string; body: readonly string[] } | null = null;
+let catPosts: Post[] = [];
+if (props.kind === 'legal') legal = legalPages(site)[props.slug as keyof ReturnType<typeof legalPages>];
+if (props.kind === 'category') {
+  const clusters = await getClusters();
+  const ids = new Set(clusters.filter(c => (props.nav.clusters ?? []).includes(c.name)).map(c => c.id));
+  catPosts = (await getPublishedPosts(500)).filter(p => p.cluster_id && ids.has(p.cluster_id));
+}
+---
+{props.kind === 'post' && <PostPage post={props.post} />}
+
+{props.kind === 'legal' && legal && (
+  <Base title={legal.title} description={legal.body[0].slice(0, 155)}>
+    <article class="reading" style="padding-top:48px;display:flex;flex-direction:column;gap:22px">
+      <h1>{legal.title}</h1>
+      <div class="prose">{legal.body.map(p => <p>{p}</p>)}</div>
+      <p class="small">Last updated {new Date().toLocaleDateString('en-US', { month: 'long', year: 'numeric' })}.</p>
+    </article>
+  </Base>
+)}
+
+{props.kind === 'category' && (
+  <Base title={props.nav.label} description={props.nav.blurb}>
+    <section class="wrap" style="padding-top:40px;display:flex;flex-direction:column;gap:12px;max-width:1240px">
+      <h1>{props.nav.label}</h1>
+      {props.nav.blurb && <p style="font-size:18px;line-height:1.55;color:var(--muted);max-width:720px">{props.nav.blurb}</p>}
+    </section>
+    <section class="wrap" style="padding-top:28px">
+      {catPosts.length ? <div class="grid grid--3">{catPosts.map((p, i) => <PostCard post={p} i={i} ratio="4 / 5" />)}</div>
+        : <p class="small">First posts in this section are on their way.</p>}
+    </section>
+  </Base>
+)}
+
+{props.kind === 'planner' && (
+  <Base title="The planner" description="Printable layout templates for small patios and balconies.">
+    <section class="reading" style="padding-top:48px;display:flex;flex-direction:column;gap:16px">
+      <span class="pill pill--white" style="align-self:flex-start;border:1px solid var(--line)">Coming soon</span>
+      <h1>Lay out your patio or balcony before you buy a thing</h1>
+      <p style="font-size:18px;line-height:1.6;color:var(--muted)">Printable templates to scale for common footprints, a furniture size table, shopping checklists by budget, and a measuring guide. Leave your email on any post and you'll hear first.</p>
+    </section>
+  </Base>
+)}

@@ -1,0 +1,12 @@
+---
+// Dev-only design fixture: renders a hand-written post through the real template.
+import PostPage from '../../components/PostPage.astro';
+import sample from '../../fixtures/sample-post.json';
+const post = sample as any;
+const related = [
+  { ...post, id: 'r1', slug: 'what-size-rug-small-patio', title: 'What size rug for a small patio', type: 'howto', excerpt: 'The answer is 5×7. Here is when it isn\'t.' },
+  { ...post, id: 'r2', slug: 'covered-patio-ideas-renters', title: 'Covered patio ideas for renters', type: 'ideas', excerpt: '12 ideas · from $40' },
+  { ...post, id: 'r3', slug: 'best-outdoor-loveseats-under-500', title: 'Best outdoor loveseats under $500', type: 'bestof', excerpt: '6 picks, all under 54 in. wide' },
+];
+---
+<PostPage post={post} related={related} noindex={true} />

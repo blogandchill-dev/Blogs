@@ -1,0 +1,17 @@
+---
+import { getSite } from '../lib/site';
+const site = await getSite();
+const [first, ...rest] = site.name.split(' & ');
+---
+<footer class="site-footer">
+  <div class="wrap">
+    <div style="display:flex;flex-direction:column;gap:10px;max-width:360px">
+      <div class="brand"><span class="word">{rest.length ? <>{first} <span class="amp">&amp;</span> {rest.join(' & ')}</> : site.name}</span></div>
+      <p class="small">{site.tagline} Some links are affiliate links; we earn a commission at no cost to you. <a href="/disclosure">Disclosure</a>.</p>
+    </div>
+    <nav aria-label="Footer">
+      <a href="/about">About</a><a href="/contact">Contact</a><a href="/editorial-policy">Editorial policy</a><a href="/disclosure">Disclosure</a><a href="/privacy">Privacy</a>
+    </nav>
+    <p class="small" style="width:100%">© {new Date().getFullYear()} {site.name}</p>
+  </div>
+</footer>

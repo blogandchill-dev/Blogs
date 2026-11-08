@@ -1,4 +1,5 @@
 import { defineConfig } from 'astro/config';
+import sitemap from '@astrojs/sitemap';
 
 // One build per site. SITE_SLUG picks the row in `sites`; SITE_URL sets canonical URLs.
 export default defineConfig({
@@ -6,4 +7,5 @@ export default defineConfig({
   output: 'static',
   trailingSlash: 'never',
   build: { format: 'file' },
+  integrations: [sitemap({ filter: p => !p.includes('/preview') })],
 });
