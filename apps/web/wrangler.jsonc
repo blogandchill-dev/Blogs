@@ -1,0 +1,25 @@
+{
+  "$schema": "node_modules/wrangler/config-schema.json",
+  // One Worker per site, all serving apps/web/dist built with that site's SITE_SLUG.
+  // Deploy with: scripts/deploy.sh <slug>
+  "name": "blogs-web",
+  "compatibility_date": "2026-11-01",
+  "assets": { "directory": "./dist", "not_found_handling": "404-page", "html_handling": "auto-trailing-slash" },
+  "env": {
+    "gable-green": {
+      "name": "gable-green",
+      "assets": { "directory": "./dist", "not_found_handling": "404-page", "html_handling": "auto-trailing-slash" },
+      "routes": [{ "pattern": "gableandgreen.com", "custom_domain": true }]
+    },
+    "nickel-nest": {
+      "name": "nickel-nest",
+      "assets": { "directory": "./dist", "not_found_handling": "404-page", "html_handling": "auto-trailing-slash" },
+      "routes": [{ "pattern": "nickelandnest.com", "custom_domain": true }]
+    },
+    "macro-tuesday": {
+      "name": "macro-tuesday",
+      "assets": { "directory": "./dist", "not_found_handling": "404-page", "html_handling": "auto-trailing-slash" },
+      "routes": [{ "pattern": "macrotuesday.com", "custom_domain": true }]
+    }
+  }
+}
