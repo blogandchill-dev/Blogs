@@ -3,6 +3,8 @@ import Base from '../layouts/Base.astro';
 import PostBody from './PostBody.astro';
 import PostCard from './PostCard.astro';
 import LeadMagnet from './LeadMagnet.astro';
+import PlanSketch from './PlanSketch.astro';
+import type { Plan } from './PlanSketch.astro';
 import { getSite, getPublishedPosts, getAuthors, readMinutes, typeLabel, placeholderTone } from '../lib/site';
 import type { Post } from '../lib/site';
 
@@ -22,6 +24,7 @@ const sections = body.filter(b => b.type === 'h2').map(b => (b as any).text as s
 const ideaHeads = sections.filter(t => !/^(what to skip|questions|faq|frequently)/i.test(t));
 const updated = new Date(post.updated_at).toLocaleDateString('en-US', { month: 'long', year: 'numeric' });
 const pills = (post.meta?.pills as string[] | undefined) ?? [];
+const plan = (post.meta?.plan as Plan | undefined) ?? null;
 const rentalFriendly = blocks.some(b => b.type === 'callout' && /rental/i.test(b.label));
 const url = `https://${site.domain}/${post.slug}`;
 const pinHref = `https://www.pinterest.com/pin/create/button/?url=${encodeURIComponent(url)}&description=${encodeURIComponent(post.title)}`;
@@ -47,16 +50,16 @@ if (faqs.length) jsonld.push({
 });
 ---
 <Base title={post.title} description={post.excerpt ?? undefined} type="article" jsonld={jsonld} image={hero?.src ?? undefined} noindex={noindex}>
-  <article class="reading" style="padding-top:40px;display:flex;flex-direction:column;gap:26px">
-    <div style="display:flex;flex-wrap:wrap;gap:8px">
+  <article class="reading" style="padding-top:36px;display:flex;flex-direction:column;gap:24px">
+    <div style="display:flex;flex-wrap:wrap;gap:6px">
       <span class="pill">{typeLabel(post.type)}</span>
       {pills.map(p => <span class="pill pill--line">{p}</span>)}
       {rentalFriendly && <span class="pill pill--info">Rental-friendly</span>}
     </div>
     <h1>{post.title}</h1>
     <div style="display:flex;align-items:center;gap:12px;font-size:14px;color:var(--muted)">
-      <div style="width:36px;height:36px;border-radius:50%;background:var(--sand);flex-shrink:0"></div>
-      <div><a href="/about" style="font-weight:700;color:var(--ink)">{author?.name ?? site.name}</a> · Updated {updated} · {minutes} min read</div>
+      <div style="width:34px;height:34px;border-radius:50%;background:var(--sand);flex-shrink:0"></div>
+      <div><a href="/about" style="font-weight:600;color:var(--ink);text-decoration:none">{author?.name ?? site.name}</a> · Updated {updated} · {minutes} min read</div>
     </div>
     {hero && (
       <figure style="margin:0">
@@ -67,18 +70,23 @@ if (faqs.length) jsonld.push({
         {hero.caption && <figcaption class="caption">{hero.caption}</figcaption>}
       </figure>
     )}
-    {lede && <p class="lede" style="font-family:var(--font-display),serif;font-size:23px;line-height:1.5">{lede}</p>}
+    {lede && <p class="lede" style="font-family:var(--font-display),serif;font-size:22px;line-height:1.5">{lede}</p>}
+    {plan && (
+      <div class="panel panel--plain" style="padding:22px 22px 14px;background:var(--paper);border:1px solid var(--line)">
+        <div class="eyebrow" style="margin-bottom:6px">The plan</div>
+        <PlanSketch plan={plan} title={`Plan for ${post.title}`} />
+      </div>
+    )}
     <div style="display:flex;flex-wrap:wrap;gap:10px;align-items:center">
-      <a class="btn btn--accent" href={pinHref} rel="nofollow noopener" target="_blank">Save to Pinterest</a>
-      {post.type === 'ideas' && <a class="btn btn--ink" href="#list">Jump to the list ↓</a>}
+      <a class="btn btn--ink" href={pinHref} rel="nofollow noopener" target="_blank">Save to Pinterest</a>
+      {post.type === 'ideas' && <a class="btn btn--line" href="#list">Jump to the list</a>}
     </div>
     {post.type === 'ideas' && ideaHeads.length > 3 && (
-      <div class="panel" style="padding:18px 22px;display:flex;flex-direction:column;gap:10px">
-        <div style="font-size:11px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)">In this post</div>
-        <div style="display:flex;flex-wrap:wrap;gap:8px">
-          {ideaHeads.slice(0, 6).map((t, i) => <a class="pill pill--white" href={`#s${i + 1}`} style="padding:7px 13px">{i + 1} · {t.length > 26 ? t.slice(0, 24) + '…' : t}</a>)}
-          {ideaHeads.length > 6 && <span class="pill pill--white" style="padding:7px 13px">+{ideaHeads.length - 6} more</span>}
-          <a class="pill pill--white" href="#skip" style="padding:7px 13px">What to skip</a>
+      <div style="border-top:1px solid var(--line);border-bottom:1px solid var(--line);padding:14px 0;display:flex;flex-direction:column;gap:10px">
+        <div class="eyebrow">In this post</div>
+        <div style="display:flex;flex-wrap:wrap;gap:6px 14px;font-size:14px">
+          {ideaHeads.map((t, i) => <a href={`#s${i + 1}`} style="color:var(--ink);text-decoration:none"><span class="hand" style="color:var(--accent-ink);margin-right:6px">{String(i + 1).padStart(2, '0')}</span>{t}</a>)}
+          <a href="#skip" style="color:var(--warn-ink);text-decoration:none">What to skip</a>
         </div>
       </div>
     )}
@@ -86,22 +94,22 @@ if (faqs.length) jsonld.push({
     <div id="list"></div>
     <PostBody blocks={body} numbered={post.type === 'ideas'} />
     <LeadMagnet />
-    <div style="border:1px solid var(--line);border-radius:var(--radius-lg);padding:20px 24px;display:flex;gap:18px;align-items:center;flex-wrap:wrap">
-      <div style="width:60px;height:60px;border-radius:50%;background:var(--sand);flex-shrink:0"></div>
+    <div style="border-top:1px solid var(--line);padding-top:22px;display:flex;gap:18px;align-items:center;flex-wrap:wrap">
+      <div style="width:56px;height:56px;border-radius:50%;background:var(--sand);flex-shrink:0"></div>
       <div style="flex:1 1 320px;display:flex;flex-direction:column;gap:4px">
-        <div style="font-family:var(--font-display),serif;font-weight:500;font-size:19px">{author?.name ?? site.name}</div>
+        <div style="font-family:var(--font-display),serif;font-size:19px">{author?.name ?? site.name}</div>
         <p class="small">{author?.bio ?? `Ideas and sizing posts are written by the ${site.name} editorial team and checked against manufacturer specs. Buying guides carry a named author.`} <a href="/editorial-policy">How we work</a>.</p>
       </div>
     </div>
     {related.length > 0 && (
-      <section style="display:flex;flex-direction:column;gap:16px">
-        <h2 style="font-size:26px">Keep going</h2>
+      <section style="display:flex;flex-direction:column;gap:16px;border-top:1px solid var(--line);padding-top:22px">
+        <div class="eyebrow">Keep going</div>
         <div class="grid grid--3" style="gap:16px">{related.map((p, i) => <PostCard post={p} i={i + 1} />)}</div>
       </section>
     )}
   </article>
   <div class="sticky-bar">
-    <a class="btn btn--accent" href={pinHref} rel="nofollow noopener" target="_blank">Save</a>
+    <a class="btn btn--ink" href={pinHref} rel="nofollow noopener" target="_blank">Save</a>
     <a class="btn btn--line" href="#list">Jump to list</a>
   </div>
 </Base>

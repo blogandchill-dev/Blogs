@@ -1,16 +1,16 @@
 ---
-const { title = 'Get the free layout sheet', blurb = 'Layouts to scale, a furniture size table, and a measuring checklist. One page, printable.', tag = 'Free download' } = Astro.props as { title?: string; blurb?: string; tag?: string };
+const { title = 'The layout sheet for this space', blurb = 'Three plans to scale, a furniture size table, and a measuring checklist. One page, printable, free.', tag = 'Free download' } = Astro.props as { title?: string; blurb?: string; tag?: string };
 const id = `email-${Math.random().toString(36).slice(2, 7)}`;
 ---
-<aside style="background:var(--ink);color:#fff;border-radius:var(--radius-lg);padding:34px;display:flex;flex-wrap:wrap;gap:24px;align-items:center">
+<aside class="panel" style="padding:30px;display:flex;flex-wrap:wrap;gap:24px;align-items:center;border:1px solid var(--line)">
   <div style="flex:1 1 280px;display:flex;flex-direction:column;gap:8px">
-    <span class="pill pill--info" style="align-self:flex-start;padding:6px 12px;font-size:12px">{tag}</span>
-    <div style="font-family:var(--font-display),serif;font-weight:500;font-size:30px;line-height:1.08">{title}</div>
-    <p style="font-size:15px;line-height:1.5;color:#C9CDCA">{blurb}</p>
+    <span class="pill pill--white" style="align-self:flex-start">{tag}</span>
+    <div style="font-family:var(--font-display),serif;font-size:28px;line-height:1.1">{title}</div>
+    <p class="small">{blurb}</p>
   </div>
-  <form method="post" action="/api/subscribe" style="flex:1 1 260px;display:flex;gap:8px;background:#fff;border-radius:999px;padding:6px">
+  <form method="post" action="/api/subscribe" style="flex:1 1 260px;display:flex;gap:8px">
     <label for={id} class="sr-only">Email</label>
-    <input id={id} name="email" type="email" required placeholder="you@email.com" style="flex:1 1 auto;min-width:0;padding:10px 14px;border:0;background:transparent;color:var(--ink);font-size:15px;font-family:inherit;outline:none" />
-    <button type="submit" class="btn btn--accent" style="padding:10px 18px;min-height:40px;font-size:14px">Send it</button>
+    <input id={id} name="email" type="email" required placeholder="you@email.com" style="flex:1 1 auto;min-width:0;padding:12px 14px;border:1px solid var(--ink);border-radius:var(--radius-sm);background:#fff;color:var(--ink);font-size:15px;font-family:inherit" />
+    <button type="submit" class="btn btn--ink" style="padding:12px 18px">Send it</button>
   </form>
 </aside>
