@@ -1,0 +1,12 @@
+{
+  "name": "blogs",
+  "private": true,
+  "packageManager": "pnpm@12.15.0",
+  "scripts": {
+    "db:start": "supabase start",
+    "db:reset": "supabase db reset",
+    "db:types": "supabase gen types typescript --local > packages/db/src/types.ts",
+    "web": "pnpm --filter web dev",
+    "agents": "pnpm --filter agents"
+  }
+}

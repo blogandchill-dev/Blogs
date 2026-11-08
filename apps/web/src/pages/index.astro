@@ -1,0 +1,18 @@
+---
+import Base from '../layouts/Base.astro';
+import { getSite, getPublishedPosts } from '../lib/site';
+const site = await getSite();
+const posts = await getPublishedPosts(30);
+---
+<Base description={site.tagline ?? undefined}>
+  <h1>Latest</h1>
+  {posts.length === 0 && <p>Nothing published yet.</p>}
+  <ul class="post-list">
+    {posts.map(p => (
+      <li>
+        <h2><a href={`/${p.slug}`}>{p.title}</a></h2>
+        {p.excerpt && <p>{p.excerpt}</p>}
+      </li>
+    ))}
+  </ul>
+</Base>

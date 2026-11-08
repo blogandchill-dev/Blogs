@@ -1,0 +1,40 @@
+---
+import { getSite } from '../lib/site';
+const site = await getSite();
+const t = site.design_tokens;
+const { title, description } = Astro.props as { title?: string; description?: string };
+const fonts = [t.font_heading, t.font_body].map(f => `family=${encodeURIComponent(f)}:wght@400;600;700`).join('&');
+---
+<!doctype html>
+<html lang="en">
+  <head>
+    <meta charset="utf-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1" />
+    <title>{title ? `${title} · ${site.name}` : site.name}</title>
+    {description && <meta name="description" content={description} />}
+    <link rel="canonical" href={new URL(Astro.url.pathname, Astro.site)} />
+    <link rel="preconnect" href="https://fonts.googleapis.com" />
+    <link rel="stylesheet" href={`https://fonts.googleapis.com/css2?${fonts}&display=swap`} />
+    <style define:vars={{
+      fontHeading: `"${t.font_heading}", serif`, fontBody: `"${t.font_body}", sans-serif`,
+      bg: t.bg, fg: t.fg, accent: t.accent, accent2: t.accent_2, radius: t.radius,
+    }}>
+      :root { --font-heading: var(--fontHeading); --font-body: var(--fontBody);
+              --bg: var(--bg); --fg: var(--fg); --accent: var(--accent); --accent-2: var(--accent2); --radius: var(--radius); }
+    </style>
+    <link rel="stylesheet" href="/styles/base.css" />
+  </head>
+  <body data-layout={site.layout_variant}>
+    <header class="site-header">
+      <a class="brand" href="/">{site.name}</a>
+      {site.tagline && <p class="tagline">{site.tagline}</p>}
+    </header>
+    <main><slot /></main>
+    <footer class="site-footer">
+      <nav>
+        <a href="/about">About</a> · <a href="/contact">Contact</a> · <a href="/editorial-policy">Editorial policy</a> · <a href="/disclosure">Disclosure</a> · <a href="/privacy">Privacy</a>
+      </nav>
+      <p>© {new Date().getFullYear()} {site.name}</p>
+    </footer>
+  </body>
+</html>
