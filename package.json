@@ -8,5 +8,8 @@
     "db:types": "supabase gen types typescript --local > packages/db/src/types.ts",
     "web": "pnpm --filter web dev",
     "agents": "pnpm --filter agents"
+  },
+  "devDependencies": {
+    "wrangler": "^4.158.0"
   }
 }
