@@ -1,7 +1,7 @@
 import { supabase } from './supabase';
 
 export type Tokens = {
-  font_display: string; font_ui: string; font_hand?: string;
+  font_display: string; font_ui: string;
   paper: string; ink: string; muted: string; line: string;
   accent: string; accent_ink: string; info: string; info_tint: string;
   sand: string; warn_tint: string; warn_ink: string;

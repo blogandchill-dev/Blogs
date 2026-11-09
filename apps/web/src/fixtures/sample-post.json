@@ -1,182 +1,39 @@
 {
-  "id": "fixture",
-  "slug": "small-patio-ideas-6x8",
-  "title": "17 small patio ideas for a 6×8 space",
-  "type": "ideas",
+  "id": "fixture", "slug": "small-patio-ideas-6x8", "title": "17 small patio ideas for a 6×8 space", "type": "ideas",
   "excerpt": "One real seat, a 5×7 rug, lights on a wire. Everything sized to 48 square feet, cheapest version first.",
-  "keyword": "small patio ideas",
-  "published_at": "2027-03-02T12:00:00Z",
-  "updated_at": "2027-03-02T12:00:00Z",
-  "hero_image_id": null,
-  "author_id": null,
-  "cluster_id": null,
-  "meta": {
-    "pills": [
-      "6×8 ft",
-      "Most under $300"
-    ],
-    "plan": {
-      "w": 8,
-      "d": 6,
-      "items": [
-        {
-          "label": "Loveseat",
-          "x": 0.25,
-          "y": 0.25,
-          "w": 4.4,
-          "d": 2.6,
-          "kind": "seat"
-        },
-        {
-          "label": "Side table",
-          "x": 4.9,
-          "y": 0.4,
-          "w": 1.6,
-          "d": 1.6,
-          "kind": "table"
-        },
-        {
-          "label": "Planter",
-          "x": 6.9,
-          "y": 0.25,
-          "w": 0.9,
-          "d": 2.2,
-          "kind": "planter"
-        },
-        {
-          "label": "5 × 7 rug",
-          "x": 0.5,
-          "y": 2.9,
-          "w": 7,
-          "d": 2.8,
-          "kind": "rug"
-        }
-      ],
-      "walkway": {
-        "label": "26 in walkway",
-        "x": 0.25,
-        "y": 3.0,
-        "w": 7.5,
-        "d": 2.2
-      },
-      "note": "6 × 8 patio, drawn to scale"
-    }
-  },
+  "keyword": "small patio ideas", "published_at": "2027-03-02T12:00:00Z", "updated_at": "2027-03-02T12:00:00Z",
+  "hero_image_id": null, "author_id": null, "cluster_id": null,
+  "meta": { "pills": ["6×8 ft", "Most under $300"] },
   "outline": null,
   "body": [
-    {
-      "type": "p",
-      "text": "A 6-by-8 patio fits one real seating choice — a loveseat or two chairs — plus a side table and a plant. Pick the seat you'll use on a Tuesday night and build around it. Everything below is sized to 48 square feet, with the cheap version first."
-    },
-    {
-      "type": "image_slot",
-      "prompt": "6x8 patio, steel loveseat against cedar fence, string lights, dusk",
-      "alt": "A small patio with a loveseat against a fence and string lights overhead",
-      "caption": "A 52-inch loveseat leaves a 26-inch walkway on a 6-foot-wide patio. That's the whole trick."
-    },
-    {
-      "type": "h2",
-      "text": "A loveseat instead of two chairs"
-    },
-    {
-      "type": "image_slot",
-      "prompt": "outdoor loveseat 52 inches wide against fence",
-      "alt": "Steel-frame outdoor loveseat with cushions",
-      "caption": "$180 – $700. Steel-frame loveseat, 52 in. wide, against a cedar fence."
-    },
-    {
-      "type": "p",
-      "text": "Two armchairs eat about 60 inches of width and leave an awkward gap between them. A two-seat loveseat does the same job in 50 to 54 inches and gives you one clean line against the fence. Budget version: a $180 steel-frame loveseat with cushions. The nicer one is teak or eucalyptus at $450 to $700 and will outlast the lease."
-    },
-    {
-      "type": "p",
-      "text": "Measure the depth too. Anything over 32 inches deep pushes your walkway under 24 inches, which is where you start turning sideways to get past."
-    },
-    {
-      "type": "h2",
-      "text": "A 5×7 rug, not a 6×9"
-    },
-    {
-      "type": "image_slot",
-      "prompt": "flatweave outdoor rug under loveseat on concrete slab",
-      "alt": "A flatweave rug under a loveseat with concrete showing at the edges",
-      "caption": "$40 – $90. Flatweave under the loveseat, six inches of slab showing on each side."
-    },
-    {
-      "type": "p",
-      "text": "The rug should stop 6 to 12 inches short of each edge so the patio reads as a room with a floor, not a rug with a patio around it. On a 6×8 that's a 5×7 — $40 to $90 for a polypropylene flatweave that hoses off. A 6×9 will curl up the wall."
-    },
-    {
-      "type": "callout",
-      "label": "Rental-friendly",
-      "text": "A rug is the one thing that changes how a concrete slab feels and leaves zero trace. If you only do one idea on this list, do this one."
-    },
-    {
-      "type": "h2",
-      "text": "String lights on a tension wire, not nails"
-    },
-    {
-      "type": "image_slot",
-      "prompt": "two zigzag runs of bulb string lights over a small patio at dusk",
-      "alt": "String lights in two zigzag runs over a patio at dusk",
-      "caption": "About $60 all in. Two zigzag runs at dusk, wire anchored to a post and the house."
-    },
-    {
-      "type": "p",
-      "text": "Over 48 square feet you need about 25 feet of lights, two runs in a zigzag. A $25 galvanized wire kit between two posts keeps the sag out and means the lights come down in five minutes when you move. Hanging them from the fence top looks fine for a week and then droops."
-    },
-    {
-      "type": "callout",
-      "label": "Skip",
-      "text": "Solar string lights at this size. They're dim by 10pm and the panel has to sit in full sun — on a 6×8 that's the spot where your chair goes."
-    },
-    {
-      "type": "h2",
-      "text": "A bistro set if you eat outside more than you lounge"
-    },
-    {
-      "type": "image_slot",
-      "prompt": "28 inch round bistro table with two folding chairs on a small patio",
-      "alt": "A small round bistro table with two folding chairs",
-      "caption": "$90 – $250. A 28-inch round table seats two and folds flat against the wall."
-    },
-    {
-      "type": "p",
-      "text": "If dinner outside matters more than a sofa, a 28-inch round bistro table and two folding chairs fit in a 4-by-4 corner and leave the rest of the slab open. Powder-coated steel runs $90 to $250. Skip anything over 30 inches; you lose the walkway."
-    },
-    {
-      "type": "h2",
-      "text": "What to skip on a 6×8"
-    },
-    {
-      "type": "list",
-      "ordered": false,
-      "items": [
-        "A four-seat dining set. There's no room to pull a chair out.",
-        "Anything with a footprint over 36 inches square that isn't the seat.",
-        "A pergola. Shade comes from a 9-foot cantilever umbrella or a shade sail instead.",
-        "Tall planters along the long side. They eat the walkway; go up the short wall instead."
-      ]
-    },
-    {
-      "type": "h2",
-      "text": "Questions people ask"
-    },
-    {
-      "type": "h3",
-      "text": "What size umbrella fits a 6×8 patio?"
-    },
-    {
-      "type": "p",
-      "text": "A 7.5-foot market umbrella over a bistro table, or a 9-foot cantilever if the base can sit in a corner. Anything bigger overhangs the edge and catches wind."
-    },
-    {
-      "type": "h3",
-      "text": "Can I put a fire pit on a 6×8?"
-    },
-    {
-      "type": "p",
-      "text": "A tabletop propane fire bowl, yes. A wood-burning pit needs 10 feet of clearance from structures, which you don't have."
-    }
+    { "type": "p", "text": "A 6-by-8 patio fits one real seating choice — a loveseat or two chairs — plus a side table and a plant. Pick the seat you'll use on a Tuesday night and build around it. Everything below is sized to 48 square feet, with the cheap version first." },
+    { "type": "image_slot", "prompt": "6x8 patio, steel loveseat against cedar fence, string lights, dusk", "alt": "A small patio with a loveseat against a fence and string lights overhead", "caption": "A 52-inch loveseat leaves a 26-inch walkway on a 6-foot-wide patio. That's the whole trick." },
+    { "type": "h2", "text": "A loveseat instead of two chairs" },
+    { "type": "image_slot", "prompt": "outdoor loveseat 52 inches wide against fence", "alt": "Steel-frame outdoor loveseat with cushions", "caption": "$180 – $700. Steel-frame loveseat, 52 in. wide, against a cedar fence." },
+    { "type": "p", "text": "Two armchairs eat about 60 inches of width and leave an awkward gap between them. A two-seat loveseat does the same job in 50 to 54 inches and gives you one clean line against the fence. Budget version: a $180 steel-frame loveseat with cushions. The nicer one is teak or eucalyptus at $450 to $700 and will outlast the lease." },
+    { "type": "p", "text": "Measure the depth too. Anything over 32 inches deep pushes your walkway under 24 inches, which is where you start turning sideways to get past." },
+    { "type": "h2", "text": "A 5×7 rug, not a 6×9" },
+    { "type": "image_slot", "prompt": "flatweave outdoor rug under loveseat on concrete slab", "alt": "A flatweave rug under a loveseat with concrete showing at the edges", "caption": "$40 – $90. Flatweave under the loveseat, six inches of slab showing on each side." },
+    { "type": "p", "text": "The rug should stop 6 to 12 inches short of each edge so the patio reads as a room with a floor, not a rug with a patio around it. On a 6×8 that's a 5×7 — $40 to $90 for a polypropylene flatweave that hoses off. A 6×9 will curl up the wall." },
+    { "type": "callout", "label": "Rental-friendly", "text": "A rug is the one thing that changes how a concrete slab feels and leaves zero trace. If you only do one idea on this list, do this one." },
+    { "type": "h2", "text": "String lights on a tension wire, not nails" },
+    { "type": "image_slot", "prompt": "two zigzag runs of bulb string lights over a small patio at dusk", "alt": "String lights in two zigzag runs over a patio at dusk", "caption": "About $60 all in. Two zigzag runs at dusk, wire anchored to a post and the house." },
+    { "type": "p", "text": "Over 48 square feet you need about 25 feet of lights, two runs in a zigzag. A $25 galvanized wire kit between two posts keeps the sag out and means the lights come down in five minutes when you move. Hanging them from the fence top looks fine for a week and then droops." },
+    { "type": "callout", "label": "Skip", "text": "Solar string lights at this size. They're dim by 10pm and the panel has to sit in full sun — on a 6×8 that's the spot where your chair goes." },
+    { "type": "h2", "text": "A bistro set if you eat outside more than you lounge" },
+    { "type": "image_slot", "prompt": "28 inch round bistro table with two folding chairs on a small patio", "alt": "A small round bistro table with two folding chairs", "caption": "$90 – $250. A 28-inch round table seats two and folds flat against the wall." },
+    { "type": "p", "text": "If dinner outside matters more than a sofa, a 28-inch round bistro table and two folding chairs fit in a 4-by-4 corner and leave the rest of the slab open. Powder-coated steel runs $90 to $250. Skip anything over 30 inches; you lose the walkway." },
+    { "type": "h2", "text": "What to skip on a 6×8" },
+    { "type": "list", "ordered": false, "items": [
+      "A four-seat dining set. There's no room to pull a chair out.",
+      "Anything with a footprint over 36 inches square that isn't the seat.",
+      "A pergola. Shade comes from a 9-foot cantilever umbrella or a shade sail instead.",
+      "Tall planters along the long side. They eat the walkway; go up the short wall instead."
+    ] },
+    { "type": "h2", "text": "Questions people ask" },
+    { "type": "h3", "text": "What size umbrella fits a 6×8 patio?" },
+    { "type": "p", "text": "A 7.5-foot market umbrella over a bistro table, or a 9-foot cantilever if the base can sit in a corner. Anything bigger overhangs the edge and catches wind." },
+    { "type": "h3", "text": "Can I put a fire pit on a 6×8?" },
+    { "type": "p", "text": "A tabletop propane fire bowl, yes. A wood-burning pit needs 10 feet of clearance from structures, which you don't have." }
   ]
 }

@@ -11,8 +11,7 @@ const { title, description, image, type = 'website', jsonld, noindex = false } =
 };
 const canonical = new URL(Astro.url.pathname, Astro.site).toString();
 const fullTitle = title ? `${title} · ${site.name}` : `${site.name} — ${site.tagline ?? ''}`.trim();
-const fam = (f: string, axes: string) => `family=${encodeURIComponent(f)}${axes}`;
-const fontHref = `https://fonts.googleapis.com/css2?${fam(t.font_display, '')}&${fam(t.font_ui, ':wght@400;500;600;700')}&${fam(t.font_hand ?? 'Architects Daughter', '')}&display=swap`;
+const fontHref = `https://fonts.googleapis.com/css2?family=${encodeURIComponent(t.font_display)}:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400&family=${encodeURIComponent(t.font_ui)}:wght@400;500;600;700;800&display=swap`;
 ---
 <!doctype html>
 <html lang="en">
@@ -37,7 +36,7 @@ const fontHref = `https://fonts.googleapis.com/css2?${fam(t.font_display, '')}&$
     <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin />
     <link rel="stylesheet" href={fontHref} />
     <style define:vars={{
-      'font-display': t.font_display, 'font-ui': t.font_ui, 'font-hand': t.font_hand ?? 'Architects Daughter',
+      'font-display': t.font_display, 'font-ui': t.font_ui,
       paper: t.paper, ink: t.ink, muted: t.muted, line: t.line,
       accent: t.accent, 'accent-ink': t.accent_ink, info: t.info, 'info-tint': t.info_tint,
       sand: t.sand, 'warn-tint': t.warn_tint, 'warn-ink': t.warn_ink,

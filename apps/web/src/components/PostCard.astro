@@ -5,7 +5,7 @@ const { post, i = 0, ratio = '4 / 3', boxed = false } = Astro.props as { post: P
 const pill = (post.meta?.pill as string) ?? typeLabel(post.type);
 const hero = post.body?.find(b => b.type === 'image_slot') as any;
 ---
-<a class="card" href={`/${post.slug}`} >
+<a class="card" href={`/${post.slug}`} style={boxed ? 'border:1px solid var(--line);border-radius:var(--radius-lg);padding:10px 10px 18px' : ''}>
   <div class="media" style={`aspect-ratio:${ratio};background:${placeholderTone(i)}`}>
     {hero?.src && <img src={hero.src} alt={hero.alt ?? ''} loading="lazy" width="800" height="600" />}
     <span class="pill pill--sm pill--white">{pill}</span>

@@ -1,79 +1,55 @@
 ---
 import Base from '../layouts/Base.astro';
 import PostCard from '../components/PostCard.astro';
-import PlanSketch from '../components/PlanSketch.astro';
-import { getSite, getPublishedPosts } from '../lib/site';
+import { getSite, getPublishedPosts, placeholderTone } from '../lib/site';
 const site = await getSite();
 const posts = await getPublishedPosts(40);
 const [lead, ...others] = posts;
 const nav = site.niche_plan.nav ?? [];
-const heroPlan = {
-  w: 8, d: 6,
-  items: [
-    { label: 'Loveseat', x: 0.25, y: 0.25, w: 4.4, d: 2.6, kind: 'seat' as const },
-    { label: 'Side table', x: 4.9, y: 0.4, w: 1.6, d: 1.6, kind: 'table' as const },
-    { label: 'Planter', x: 6.9, y: 0.25, w: 0.9, d: 2.2, kind: 'planter' as const },
-    { label: '5 × 7 rug', x: 0.5, y: 2.9, w: 7, d: 2.8, kind: 'rug' as const },
-  ],
-  walkway: { label: '26 in walkway', x: 0.25, y: 3.0, w: 7.5, d: 2.2 },
-  note: 'a 6 × 8 patio, drawn to scale',
-};
 ---
-<Base description="Small-space ideas with the measurements: patios, balconies, small yards and small apartments, every idea with dimensions, a price and a rental-friendly version.">
-  <section class="wrap" style="padding-top:40px;display:flex;flex-wrap:wrap;gap:40px;align-items:center">
-    <div style="flex:1 1 420px;display:flex;flex-direction:column;gap:18px;max-width:600px">
-      <span class="pill pill--hand" style="align-self:flex-start;background:var(--sand)">{site.tagline}</span>
-      <h1>Every idea here comes with its measurements.</h1>
-      <p style="font-size:18px;line-height:1.55;color:var(--muted)">Patios, balconies, small yards and small apartments. Dimensions, a price range, what to skip, and a version your landlord won't notice — so you buy once.</p>
-      <div style="display:flex;flex-wrap:wrap;gap:6px">
-        {nav.map(n => <a class="pill pill--line" href={n.href} style="padding:11px 14px;font-size:12px">{n.label}</a>)}
-      </div>
+<Base description={site.tagline ?? undefined}>
+  <section class="wrap" style="padding-top:40px;display:flex;flex-direction:column;gap:22px">
+    <div style="display:flex;flex-direction:column;gap:12px;max-width:760px">
+      <h1>Ideas sized to the space you <em style="font-weight:400">actually</em> have.</h1>
+      <p style="font-size:18px;line-height:1.55;color:var(--muted)">Patios, balconies, small yards and small apartments — every idea with dimensions, a price, and a rental-friendly version. Start with your space.</p>
     </div>
-    <div style="flex:1 1 380px;max-width:560px">
-      <PlanSketch plan={heroPlan} title="Plan of a 6 by 8 foot patio with a loveseat, side table, planter and rug" large />
+    <div style="display:flex;flex-wrap:wrap;gap:8px">
+      {nav.map((n, i) => <a class={`pill ${i === 0 ? 'pill--ink' : ''}`} href={n.href} style="padding:12px 18px;font-size:14px">{n.label}</a>)}
     </div>
   </section>
 
   {lead ? (
-    <section class="wrap" style="padding-top:56px">
-      <div class="eyebrow" style="border-top:1px solid var(--line);padding-top:14px;margin-bottom:18px">Latest</div>
+    <section class="wrap" style="padding-top:36px">
       <div class="grid" style="grid-template-columns:repeat(12,minmax(0,1fr))">
-        <div style="grid-column:span 7"><PostCard post={lead} i={0} ratio="16 / 10" /></div>
-        <div style="grid-column:span 5" class="grid grid--2">{others.slice(0, 4).map((p, i) => <PostCard post={p} i={i + 1} ratio="1 / 1" />)}</div>
+        <div style="grid-column:span 7">
+          <PostCard post={lead} i={0} ratio="16 / 10" />
+        </div>
+        <div style="grid-column:span 5" class="grid grid--2" >
+          {others.slice(0, 4).map((p, i) => <PostCard post={p} i={i + 1} ratio="1 / 1" />)}
+        </div>
       </div>
     </section>
   ) : (
-    <section class="wrap" style="padding-top:56px">
-      <div class="eyebrow" style="border-top:1px solid var(--line);padding-top:14px;margin-bottom:12px">Latest</div>
-      <p class="small">The first posts are being measured. Patios first — they're up in time for spring.</p>
-    </section>
+    <section class="wrap" style="padding-top:36px"><p class="small">First posts are on their way.</p></section>
   )}
 
   {others.length > 4 && (
-    <section class="wrap" style="padding-top:48px;display:flex;flex-direction:column;gap:18px">
-      <div class="grid grid--3">{others.slice(4, 13).map((p, i) => <PostCard post={p} i={i} />)}</div>
+    <section class="wrap" style="padding-top:56px;display:flex;flex-direction:column;gap:18px">
+      <div style="display:flex;align-items:baseline;justify-content:space-between;gap:16px;flex-wrap:wrap">
+        <h2 style="font-size:30px">Latest</h2>
+      </div>
+      <div class="grid grid--3">{others.slice(4, 13).map((p, i) => <PostCard post={p} i={i} boxed />)}</div>
     </section>
   )}
 
   <section class="wrap" style="padding-top:56px">
-    <div class="eyebrow" style="border-top:1px solid var(--line);padding-top:14px;margin-bottom:18px">How we work</div>
-    <div class="grid grid--3">
-      <div style="display:flex;flex-direction:column;gap:8px"><span class="hand" style="font-size:22px;color:var(--accent-ink)">01</span><h3 style="font-family:var(--font-display),serif;font-weight:400;font-size:20px">We size everything to a footprint</h3><p class="small">Not "small patio." A 6×8, an 8×10, a 3-foot-wide balcony. Every idea names the space it fits and the clearance it leaves.</p></div>
-      <div style="display:flex;flex-direction:column;gap:8px"><span class="hand" style="font-size:22px;color:var(--accent-ink)">02</span><h3 style="font-family:var(--font-display),serif;font-weight:400;font-size:20px">Cheap version first</h3><p class="small">Every idea has a price range, and the budget option comes before the nice one. Prices are date-stamped.</p></div>
-      <div style="display:flex;flex-direction:column;gap:8px"><span class="hand" style="font-size:22px;color:var(--accent-ink)">03</span><h3 style="font-family:var(--font-display),serif;font-weight:400;font-size:20px">A rental-friendly way, every time</h3><p class="small">No drilling, no painting, nothing you can't take with you. If an idea needs a landlord's blessing, we say so and offer the one that doesn't.</p></div>
-    </div>
-  </section>
-
-  <section class="wrap" style="padding-top:56px">
-    <div class="panel" style="padding:40px;display:flex;flex-wrap:wrap;gap:32px;align-items:center">
+    <div class="panel" style="padding:44px;display:flex;flex-wrap:wrap;gap:32px;align-items:center">
       <div style="flex:1 1 360px;display:flex;flex-direction:column;gap:12px">
-        <span class="pill pill--white" style="align-self:flex-start">Coming soon</span>
-        <h2 style="font-size:clamp(26px,3.2vw,36px)">Lay out your patio or balcony before you buy a thing</h2>
-        <p style="font-size:16px;line-height:1.55;color:var(--muted)">Printable plan templates to scale for common footprints, a furniture size table, shopping checklists by budget, and a measuring guide.</p>
+        <span class="pill pill--white" style="align-self:flex-start;padding:6px 12px;font-size:12px">Coming soon</span>
+        <div style="font-family:var(--font-display),serif;font-weight:500;font-size:clamp(28px,3.5vw,40px);line-height:1.05;letter-spacing:-.015em">Lay out your patio or balcony before you buy a thing</div>
+        <p style="font-size:16px;line-height:1.55;color:var(--muted)">Printable templates to scale for common footprints, a furniture size table, shopping checklists by budget, and a measuring guide.</p>
       </div>
-      <div style="flex:1 1 300px;max-width:420px">
-        <PlanSketch plan={{ w: 10, d: 4, items: [{ label: 'Bistro table', x: 0.4, y: 0.6, w: 2.4, d: 2.4, kind: 'table' }, { label: 'Chair', x: 3.1, y: 1, w: 1.6, d: 1.6, kind: 'seat' }, { label: 'Planters', x: 6.5, y: 0.3, w: 3.2, d: 1, kind: 'planter' }], note: 'a 4 × 10 balcony' }} />
-      </div>
+      <div style="flex:1 1 320px;aspect-ratio:4 / 3;border-radius:var(--radius);background:#D8D1C4"></div>
     </div>
   </section>
 </Base>
