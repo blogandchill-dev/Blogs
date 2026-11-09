@@ -1,0 +1,600 @@
+{"keyword": "rental cars", "volume": 823000, "cpc": 3.65, "competition": "HIGH", "kd": 75, "intent": "commercial"}
+{"keyword": "living spaces", "volume": 823000, "cpc": 0.91, "competition": "HIGH", "kd": 2, "intent": "informational"}
+{"keyword": "for apartment rental", "volume": 550000, "cpc": 2.29, "competition": "HIGH", "kd": null, "intent": "transactional"}
+{"keyword": "enterprise rental", "volume": 450000, "cpc": 1.28, "competition": "MEDIUM", "kd": 33, "intent": "commercial"}
+{"keyword": "vacaton rental", "volume": 450000, "cpc": 2.91, "competition": "LOW", "kd": null, "intent": "transactional"}
+{"keyword": "rental house to rent", "volume": 450000, "cpc": 1.35, "competition": "MEDIUM", "kd": null, "intent": "transactional"}
+{"keyword": "vacatio rental", "volume": 450000, "cpc": 2.91, "competition": "LOW", "kd": null, "intent": "transactional"}
+{"keyword": "for rental home", "volume": 450000, "cpc": 1.35, "competition": "MEDIUM", "kd": null, "intent": "transactional"}
+{"keyword": "rental house for", "volume": 450000, "cpc": 1.35, "competition": "MEDIUM", "kd": null, "intent": "transactional"}
+{"keyword": "car rental return", "volume": 368000, "cpc": 0.91, "competition": "LOW", "kd": 18, "intent": "transactional"}
+{"keyword": "car return rental", "volume": 368000, "cpc": 0.91, "competition": "LOW", "kd": null, "intent": "transactional"}
+{"keyword": "grass lawn mowing", "volume": 301000, "cpc": 0.73, "competition": "HIGH", "kd": null, "intent": "informational"}
+{"keyword": "rv rental", "volume": 301000, "cpc": 2.26, "competition": "HIGH", "kd": 53, "intent": "transactional"}
+{"keyword": "rv motorhomes rental", "volume": 301000, "cpc": 2.26, "competition": "HIGH", "kd": null, "intent": "transactional"}
+{"keyword": "rv and rental", "volume": 301000, "cpc": 2.26, "competition": "HIGH", "kd": null, "intent": "transactional"}
+{"keyword": "rental family", "volume": 246000, "cpc": 1.48, "competition": "LOW", "kd": 39, "intent": "informational"}
+{"keyword": "above ground pool ground", "volume": 201000, "cpc": 0.75, "competition": "HIGH", "kd": null, "intent": "informational"}
+{"keyword": "grass", "volume": 201000, "cpc": 1.12, "competition": "LOW", "kd": 29, "intent": "informational"}
+{"keyword": "patio furniture", "volume": 201000, "cpc": 2.14, "competition": "HIGH", "kd": 40, "intent": "transactional"}
+{"keyword": "depot home rental", "volume": 165000, "cpc": 0.15, "competition": "MEDIUM", "kd": null, "intent": "navigational"}
+{"keyword": "patio furniture outdoors", "volume": 165000, "cpc": 3.44, "competition": "HIGH", "kd": null, "intent": "commercial"}
+{"keyword": "patio furniture outdoor furniture", "volume": 165000, "cpc": 3.44, "competition": "HIGH", "kd": null, "intent": "commercial"}
+{"keyword": "landscaping", "volume": 165000, "cpc": 6.76, "competition": "LOW", "kd": 55, "intent": "commercial"}
+{"keyword": "outdoor furniture", "volume": 165000, "cpc": 3.44, "competition": "HIGH", "kd": 37, "intent": "transactional"}
+{"keyword": "portable toliet rental", "volume": 135000, "cpc": 13.27, "competition": "MEDIUM", "kd": null, "intent": "transactional"}
+{"keyword": "truck budget rental", "volume": 135000, "cpc": 4.22, "competition": "MEDIUM", "kd": null, "intent": "commercial"}
+{"keyword": "budget truck rental rental", "volume": 135000, "cpc": 4.22, "competition": "MEDIUM", "kd": null, "intent": "commercial"}
+{"keyword": "portable toilets for rental", "volume": 135000, "cpc": 13.27, "competition": "MEDIUM", "kd": null, "intent": "commercial"}
+{"keyword": "living room", "volume": 135000, "cpc": 1.48, "competition": "HIGH", "kd": 0, "intent": "informational"}
+{"keyword": "portable restrooms for rental", "volume": 135000, "cpc": 13.27, "competition": "MEDIUM", "kd": null, "intent": "commercial"}
+{"keyword": "porta potty rental", "volume": 135000, "cpc": 13.27, "competition": "MEDIUM", "kd": 32, "intent": "transactional"}
+{"keyword": "patio", "volume": 110000, "cpc": 3.03, "competition": "MEDIUM", "kd": 39, "intent": "informational"}
+{"keyword": "camper rental near.me", "volume": 110000, "cpc": 2.33, "competition": "HIGH", "kd": null, "intent": "transactional"}
+{"keyword": "budget rental car", "volume": 110000, "cpc": 2.45, "competition": "MEDIUM", "kd": 10, "intent": "transactional"}
+{"keyword": "truck rental truck rental", "volume": 110000, "cpc": 3.01, "competition": "MEDIUM", "kd": null, "intent": "transactional"}
+{"keyword": "carpet cleaner rental", "volume": 110000, "cpc": 1.55, "competition": "HIGH", "kd": 2, "intent": "commercial"}
+{"keyword": "sixt rental company", "volume": 110000, "cpc": 1.13, "competition": "MEDIUM", "kd": null, "intent": "navigational"}
+{"keyword": "budget rental cars", "volume": 110000, "cpc": 3.09, "competition": "MEDIUM", "kd": 15, "intent": "transactional"}
+{"keyword": "bike rental", "volume": 110000, "cpc": 0.83, "competition": "LOW", "kd": 35, "intent": "transactional"}
+{"keyword": "trailer rental rental", "volume": 90500, "cpc": 2.51, "competition": "MEDIUM", "kd": null, "intent": "transactional"}
+{"keyword": "bounce house rental", "volume": 90500, "cpc": 3.15, "competition": "HIGH", "kd": 37, "intent": "transactional"}
+{"keyword": "grass and seed", "volume": 90500, "cpc": 0.87, "competition": "HIGH", "kd": null, "intent": "informational"}
+{"keyword": "bike rental service", "volume": 90500, "cpc": 0.91, "competition": "LOW", "kd": 19, "intent": "commercial"}
+{"keyword": "bouncehouse rental", "volume": 90500, "cpc": 3.15, "competition": "HIGH", "kd": null, "intent": "transactional"}
+{"keyword": "trailer rental", "volume": 90500, "cpc": 2.51, "competition": "MEDIUM", "kd": 18, "intent": "transactional"}
+{"keyword": "rental of uhaul trailer", "volume": 90500, "cpc": 3.52, "competition": "LOW", "kd": null, "intent": "transactional"}
+{"keyword": "bike rental services", "volume": 90500, "cpc": 1.14, "competition": "LOW", "kd": 14, "intent": "commercial"}
+{"keyword": "bicycle rental service", "volume": 90500, "cpc": 0.91, "competition": "LOW", "kd": 15, "intent": "commercial"}
+{"keyword": "bicycle rental services", "volume": 90500, "cpc": 0.91, "competition": "LOW", "kd": 37, "intent": "commercial"}
+{"keyword": "equipment rental", "volume": 74000, "cpc": 2.59, "competition": "MEDIUM", "kd": 44, "intent": "commercial"}
+{"keyword": "backyard", "volume": 74000, "cpc": 1.77, "competition": "LOW", "kd": 24, "intent": "informational"}
+{"keyword": "zillow rental manager", "volume": 74000, "cpc": 3.98, "competition": "LOW", "kd": 36, "intent": "navigational"}
+{"keyword": "bed room with furniture", "volume": 74000, "cpc": 2.81, "competition": "HIGH", "kd": null, "intent": "transactional"}
+{"keyword": "rent to own furniture", "volume": 74000, "cpc": 3.76, "competition": "HIGH", "kd": 12, "intent": "commercial"}
+{"keyword": "the pit room", "volume": 74000, "cpc": 0.82, "competition": "LOW", "kd": 0, "intent": "informational"}
+{"keyword": "hertz rental", "volume": 74000, "cpc": 2.39, "competition": "LOW", "kd": 5, "intent": "transactional"}
+{"keyword": "equipment rental and", "volume": 74000, "cpc": 2.78, "competition": "MEDIUM", "kd": null, "intent": "commercial"}
+{"keyword": "loft living", "volume": 74000, "cpc": 6.12, "competition": "LOW", "kd": 6, "intent": "navigational"}
+{"keyword": "outdoor patio furniture", "volume": 60500, "cpc": 3.07, "competition": "HIGH", "kd": 42, "intent": "transactional"}
+{"keyword": "rental assistance", "volume": 60500, "cpc": 4.51, "competition": "LOW", "kd": 53, "intent": "informational"}
+{"keyword": "dvc rental", "volume": 60500, "cpc": 0.98, "competition": "LOW", "kd": 57, "intent": "commercial"}
+{"keyword": "apartments near me for rental", "volume": 60500, "cpc": 3.26, "competition": "HIGH", "kd": null, "intent": "transactional"}
+{"keyword": "patio umbrella", "volume": 60500, "cpc": 1.53, "competition": "HIGH", "kd": 24, "intent": "transactional"}
+{"keyword": "stump grinder rental", "volume": 60500, "cpc": 2.45, "competition": "MEDIUM", "kd": 0, "intent": "commercial"}
+{"keyword": "a dollar rental", "volume": 60500, "cpc": 1.56, "competition": "LOW", "kd": null, "intent": "transactional"}
+{"keyword": "properties rental near me", "volume": 60500, "cpc": 1.27, "competition": "MEDIUM", "kd": null, "intent": "commercial"}
+{"keyword": "patio chairs", "volume": 49500, "cpc": 1.14, "competition": "HIGH", "kd": 4, "intent": "transactional"}
+{"keyword": "the living room", "volume": 49500, "cpc": 7.14, "competition": "LOW", "kd": 9, "intent": "informational"}
+{"keyword": "rental of tuxedo", "volume": 49500, "cpc": 5.68, "competition": "HIGH", "kd": 31, "intent": "transactional"}
+{"keyword": "urban backyard nolita", "volume": 49500, "cpc": 0.35, "competition": "LOW", "kd": 0, "intent": "navigational"}
+{"keyword": "the patio", "volume": 49500, "cpc": 1.04, "competition": "LOW", "kd": 25, "intent": "informational"}
+{"keyword": "van rental", "volume": 49500, "cpc": 2.76, "competition": "HIGH", "kd": 6, "intent": "transactional"}
+{"keyword": "the backyard", "volume": 49500, "cpc": 0.49, "competition": "LOW", "kd": 14, "intent": "informational"}
+{"keyword": "patio set", "volume": 49500, "cpc": 1.12, "competition": "HIGH", "kd": 10, "intent": "transactional"}
+{"keyword": "tuxedo rental", "volume": 49500, "cpc": 5.68, "competition": "HIGH", "kd": 31, "intent": "transactional"}
+{"keyword": "van and rental", "volume": 49500, "cpc": 2.76, "competition": "HIGH", "kd": null, "intent": "transactional"}
+{"keyword": "living room theater", "volume": 49500, "cpc": 0.53, "competition": "LOW", "kd": 10, "intent": "transactional"}
+{"keyword": "loft apartment", "volume": 49500, "cpc": 1.98, "competition": "MEDIUM", "kd": 2, "intent": "navigational"}
+{"keyword": "van rental van", "volume": 49500, "cpc": 2.76, "competition": "HIGH", "kd": null, "intent": "transactional"}
+{"keyword": "budget suites", "volume": 49500, "cpc": 4.19, "competition": "LOW", "kd": 0, "intent": "commercial"}
+{"keyword": "landscaping and supply", "volume": 40500, "cpc": 2.57, "competition": "MEDIUM", "kd": null, "intent": "commercial"}
+{"keyword": "leasing rental agreement", "volume": 40500, "cpc": 7.75, "competition": "HIGH", "kd": null, "intent": "transactional"}
+{"keyword": "the living desert zoo and gardens", "volume": 40500, "cpc": 0.55, "competition": "LOW", "kd": 39, "intent": "informational"}
+{"keyword": "budget rental", "volume": 40500, "cpc": 2.67, "competition": "MEDIUM", "kd": 27, "intent": "transactional"}
+{"keyword": "ski rental", "volume": 40500, "cpc": 2.26, "competition": "LOW", "kd": 15, "intent": "commercial"}
+{"keyword": "indoor pool", "volume": 40500, "cpc": 1.77, "competition": "LOW", "kd": 1, "intent": "informational"}
+{"keyword": "15 seater van for rental", "volume": 40500, "cpc": 3.4, "competition": "HIGH", "kd": 0, "intent": "transactional"}
+{"keyword": "holiday apartment", "volume": 40500, "cpc": 2.2, "competition": "LOW", "kd": 0, "intent": "transactional"}
+{"keyword": "vacation house rental outer banks nc", "volume": 40500, "cpc": 2.91, "competition": "MEDIUM", "kd": null, "intent": "transactional"}
+{"keyword": "apartment rental", "volume": 40500, "cpc": 2.38, "competition": "MEDIUM", "kd": 100, "intent": "commercial"}
+{"keyword": "rental for water slide", "volume": 40500, "cpc": 3.03, "competition": "MEDIUM", "kd": null, "intent": "transactional"}
+{"keyword": "rental car rental deals", "volume": 40500, "cpc": 4.53, "competition": "MEDIUM", "kd": null, "intent": "commercial"}
+{"keyword": "supply landscaping", "volume": 40500, "cpc": 2.57, "competition": "MEDIUM", "kd": null, "intent": "commercial"}
+{"keyword": "balcony", "volume": 40500, "cpc": 4.87, "competition": "LOW", "kd": 18, "intent": "informational"}
+{"keyword": "studio for rental near me", "volume": 33100, "cpc": 2.14, "competition": "HIGH", "kd": null, "intent": "transactional"}
+{"keyword": "vacation rental near.me", "volume": 33100, "cpc": 1.95, "competition": "LOW", "kd": null, "intent": "navigational"}
+{"keyword": "holiday rent apartment", "volume": 33100, "cpc": 2.06, "competition": "LOW", "kd": null, "intent": "transactional"}
+{"keyword": "apartment for holiday rental", "volume": 33100, "cpc": 2.06, "competition": "LOW", "kd": null, "intent": "transactional"}
+{"keyword": "sofa living rooms", "volume": 33100, "cpc": 1.97, "competition": "HIGH", "kd": null, "intent": "informational"}
+{"keyword": "rent rental properties", "volume": 33100, "cpc": 1.93, "competition": "LOW", "kd": null, "intent": "commercial"}
+{"keyword": "rental of suits", "volume": 33100, "cpc": 4.16, "competition": "HIGH", "kd": null, "intent": "commercial"}
+{"keyword": "motorcycle rental", "volume": 33100, "cpc": 1.03, "competition": "LOW", "kd": 39, "intent": "transactional"}
+{"keyword": "rental for cargo van", "volume": 33100, "cpc": 2.32, "competition": "HIGH", "kd": null, "intent": "transactional"}
+{"keyword": "front yard landscaping ideas", "volume": 33100, "cpc": 0.72, "competition": "HIGH", "kd": 12, "intent": "informational"}
+{"keyword": "dvc rental store", "volume": 33100, "cpc": 0.39, "competition": "LOW", "kd": 44, "intent": "commercial"}
+{"keyword": "small bathroom ideas", "volume": 33100, "cpc": 0.81, "competition": "HIGH", "kd": 12, "intent": "informational"}
+{"keyword": "holiday rental apartment", "volume": 33100, "cpc": 2.06, "competition": "LOW", "kd": null, "intent": "informational"}
+{"keyword": "rent holiday apartment", "volume": 33100, "cpc": 2.06, "competition": "LOW", "kd": 46, "intent": "transactional"}
+{"keyword": "laundry area ideas", "volume": 33100, "cpc": 0.63, "competition": "HIGH", "kd": 7, "intent": "informational"}
+{"keyword": "the apartment", "volume": 33100, "cpc": 1.92, "competition": "LOW", "kd": 36, "intent": "navigational"}
+{"keyword": "cruise america rv rental", "volume": 33100, "cpc": 0.56, "competition": "LOW", "kd": 16, "intent": "commercial"}
+{"keyword": "brightview landscaping", "volume": 33100, "cpc": 8.51, "competition": "LOW", "kd": 10, "intent": "navigational"}
+{"keyword": "rental properties", "volume": 33100, "cpc": 1.93, "competition": "LOW", "kd": 52, "intent": "commercial"}
+{"keyword": "couch sofa living room", "volume": 33100, "cpc": 1.97, "competition": "HIGH", "kd": null, "intent": "navigational"}
+{"keyword": "camper van rental", "volume": 33100, "cpc": 1.89, "competition": "HIGH", "kd": 41, "intent": "transactional"}
+{"keyword": "patio covers", "volume": 33100, "cpc": 4.64, "competition": "HIGH", "kd": 0, "intent": "transactional"}
+{"keyword": "landscaping services", "volume": 33100, "cpc": 9.34, "competition": "LOW", "kd": 7, "intent": "commercial"}
+{"keyword": "interior living room idea", "volume": 33100, "cpc": 1.05, "competition": "HIGH", "kd": 38, "intent": "informational"}
+{"keyword": "landscape design", "volume": 33100, "cpc": 6.13, "competition": "LOW", "kd": 50, "intent": "informational"}
+{"keyword": "living room interior idea", "volume": 33100, "cpc": 1.05, "competition": "HIGH", "kd": null, "intent": "informational"}
+{"keyword": "clothing rental services", "volume": 33100, "cpc": 8.02, "competition": "HIGH", "kd": 58, "intent": "commercial"}
+{"keyword": "closets by design", "volume": 33100, "cpc": 47.19, "competition": "HIGH", "kd": 25, "intent": "commercial"}
+{"keyword": "dollar rental", "volume": 33100, "cpc": 1.52, "competition": "MEDIUM", "kd": 9, "intent": "transactional"}
+{"keyword": "rental van campers", "volume": 33100, "cpc": 1.89, "competition": "HIGH", "kd": null, "intent": "transactional"}
+{"keyword": "service landscaping", "volume": 33100, "cpc": 9.34, "competition": "LOW", "kd": null, "intent": "commercial"}
+{"keyword": "electric bikes for rental", "volume": 33100, "cpc": 1.59, "competition": "LOW", "kd": null, "intent": "commercial"}
+{"keyword": "share rv rental", "volume": 33100, "cpc": 2.44, "competition": "LOW", "kd": 53, "intent": "transactional"}
+{"keyword": "in the tall grass", "volume": 33100, "cpc": 0.1, "competition": "LOW", "kd": 36, "intent": "informational"}
+{"keyword": "rental properties rent", "volume": 33100, "cpc": 1.93, "competition": "LOW", "kd": null, "intent": "commercial"}
+{"keyword": "rental car parking", "volume": 33100, "cpc": 0.82, "competition": "LOW", "kd": 0, "intent": "transactional"}
+{"keyword": "landscaping companies", "volume": 33100, "cpc": 10.55, "competition": "MEDIUM", "kd": 12, "intent": "commercial"}
+{"keyword": "laundry room ideas", "volume": 33100, "cpc": 0.5, "competition": "HIGH", "kd": 11, "intent": "informational"}
+{"keyword": "american cruise rv rental", "volume": 33100, "cpc": 0.56, "competition": "LOW", "kd": null, "intent": "navigational"}
+{"keyword": "rental car in pr", "volume": 27100, "cpc": 4.38, "competition": "MEDIUM", "kd": null, "intent": "transactional"}
+{"keyword": "secret mall apartment", "volume": 27100, "cpc": 4.69, "competition": "LOW", "kd": 8, "intent": "navigational"}
+{"keyword": "rental return", "volume": 27100, "cpc": 0.51, "competition": "LOW", "kd": 18, "intent": "informational"}
+{"keyword": "carpet outdoor patio", "volume": 27100, "cpc": 2.32, "competition": "HIGH", "kd": null, "intent": "commercial"}
+{"keyword": "tool rental", "volume": 27100, "cpc": 1.25, "competition": "MEDIUM", "kd": 30, "intent": "commercial"}
+{"keyword": "landscaping ideas", "volume": 27100, "cpc": 1.19, "competition": "HIGH", "kd": 21, "intent": "informational"}
+{"keyword": "rental homes", "volume": 27100, "cpc": 1.68, "competition": "MEDIUM", "kd": 26, "intent": "transactional"}
+{"keyword": "tent rental", "volume": 27100, "cpc": 3.25, "competition": "HIGH", "kd": 24, "intent": "transactional"}
+{"keyword": "decorating ideas for a room", "volume": 27100, "cpc": 1.08, "competition": "HIGH", "kd": null, "intent": "informational"}
+{"keyword": "miami flat rental", "volume": 27100, "cpc": 2.61, "competition": "HIGH", "kd": null, "intent": "navigational"}
+{"keyword": "outdoor patio rug carpet", "volume": 27100, "cpc": 2.32, "competition": "HIGH", "kd": null, "intent": "commercial"}
+{"keyword": "artificial grass", "volume": 27100, "cpc": 5.37, "competition": "HIGH", "kd": 21, "intent": "transactional"}
+{"keyword": "urban backyard", "volume": 27100, "cpc": 0.13, "competition": "LOW", "kd": 8, "intent": "informational"}
+{"keyword": "rent apartment", "volume": 27100, "cpc": 2.65, "competition": "MEDIUM", "kd": 32, "intent": "commercial"}
+{"keyword": "pergola ideas", "volume": 27100, "cpc": 1.51, "competition": "HIGH", "kd": 0, "intent": "informational"}
+{"keyword": "agents for apartment rentals", "volume": 27100, "cpc": 2.04, "competition": "LOW", "kd": null, "intent": "commercial"}
+{"keyword": "apartment rental agency", "volume": 27100, "cpc": 2.04, "competition": "LOW", "kd": 48, "intent": "commercial"}
+{"keyword": "dump trailer rental", "volume": 27100, "cpc": 2.07, "competition": "HIGH", "kd": 0, "intent": "transactional"}
+{"keyword": "bathroom ideas", "volume": 27100, "cpc": 1.31, "competition": "HIGH", "kd": 37, "intent": "informational"}
+{"keyword": "rent apartment florida miami", "volume": 27100, "cpc": 2.61, "competition": "HIGH", "kd": 4, "intent": "transactional"}
+{"keyword": "sidetable living room", "volume": 27100, "cpc": 1.56, "competition": "HIGH", "kd": null, "intent": "navigational"}
+{"keyword": "rental short term apartments", "volume": 27100, "cpc": 2.65, "competition": "MEDIUM", "kd": null, "intent": "transactional"}
+{"keyword": "above ground pool with deck", "volume": 27100, "cpc": 1.11, "competition": "HIGH", "kd": 0, "intent": "transactional"}
+{"keyword": "bedrooms ideas design", "volume": 27100, "cpc": 1.08, "competition": "HIGH", "kd": null, "intent": "commercial"}
+{"keyword": "rug doctor rental", "volume": 27100, "cpc": 0.94, "competition": "MEDIUM", "kd": 28, "intent": "commercial"}
+{"keyword": "idea for bedroom design", "volume": 27100, "cpc": 1.08, "competition": "HIGH", "kd": null, "intent": "informational"}
+{"keyword": "scaffolding rental", "volume": 27100, "cpc": 1.92, "competition": "HIGH", "kd": 0, "intent": "transactional"}
+{"keyword": "backyard and barbeque", "volume": 27100, "cpc": 3.06, "competition": "LOW", "kd": null, "intent": "informational"}
+{"keyword": "outdoor patio rugs", "volume": 27100, "cpc": 2.32, "competition": "HIGH", "kd": 17, "intent": "transactional"}
+{"keyword": "patio rug outdoors", "volume": 27100, "cpc": 2.32, "competition": "HIGH", "kd": null, "intent": "transactional"}
+{"keyword": "fescue grass", "volume": 27100, "cpc": 0.86, "competition": "HIGH", "kd": 1, "intent": "informational"}
+{"keyword": "rental properties near me", "volume": 27100, "cpc": 1.32, "competition": "HIGH", "kd": 37, "intent": "commercial"}
+{"keyword": "deck for an above ground pool", "volume": 27100, "cpc": 1.11, "competition": "HIGH", "kd": null, "intent": "transactional"}
+{"keyword": "backyard discovery", "volume": 27100, "cpc": 1.01, "competition": "HIGH", "kd": 17, "intent": "informational"}
+{"keyword": "for rent apartment miami", "volume": 27100, "cpc": 2.61, "competition": "HIGH", "kd": null, "intent": "transactional"}
+{"keyword": "outdoor patio carpeting", "volume": 27100, "cpc": 2.32, "competition": "HIGH", "kd": null, "intent": "commercial"}
+{"keyword": "deck and above ground pool", "volume": 27100, "cpc": 1.11, "competition": "HIGH", "kd": null, "intent": "commercial"}
+{"keyword": "room decoration ideas bed room", "volume": 27100, "cpc": 1.08, "competition": "HIGH", "kd": null, "intent": "informational"}
+{"keyword": "umbrella with base patio", "volume": 22200, "cpc": 1.72, "competition": "HIGH", "kd": null, "intent": "navigational"}
+{"keyword": "home rental owner", "volume": 22200, "cpc": 1.03, "competition": "MEDIUM", "kd": null, "intent": "navigational"}
+{"keyword": "joe's apartment", "volume": 22200, "cpc": 0.6, "competition": "LOW", "kd": 12, "intent": "navigational"}
+{"keyword": "rental house section 8", "volume": 22200, "cpc": 1.98, "competition": "LOW", "kd": null, "intent": "navigational"}
+{"keyword": "door patio blinds", "volume": 22200, "cpc": 2.44, "competition": "HIGH", "kd": null, "intent": "transactional"}
+{"keyword": "rental prices for u haul trucks", "volume": 22200, "cpc": 4.27, "competition": "LOW", "kd": null, "intent": "commercial"}
+{"keyword": "and chair rental", "volume": 22200, "cpc": 2.99, "competition": "HIGH", "kd": null, "intent": "commercial"}
+{"keyword": "rooms to go patio", "volume": 22200, "cpc": 2.35, "competition": "MEDIUM", "kd": 0, "intent": "navigational"}
+{"keyword": "rental home by owners", "volume": 22200, "cpc": 1.03, "competition": "MEDIUM", "kd": null, "intent": "transactional"}
+{"keyword": "excavators for rental", "volume": 22200, "cpc": 2.65, "competition": "MEDIUM", "kd": null, "intent": "commercial"}
+{"keyword": "economic rental car", "volume": 22200, "cpc": 3.8, "competition": "MEDIUM", "kd": null, "intent": "commercial"}
+{"keyword": "summer rental", "volume": 22200, "cpc": 2.09, "competition": "LOW", "kd": 15, "intent": "transactional"}
+{"keyword": "landscaping stones", "volume": 22200, "cpc": 0.79, "competition": "HIGH", "kd": 0, "intent": "transactional"}
+{"keyword": "one bedroom apartment", "volume": 22200, "cpc": 2.81, "competition": "HIGH", "kd": 0, "intent": "navigational"}
+{"keyword": "pod rental", "volume": 22200, "cpc": 10.62, "competition": "HIGH", "kd": 32, "intent": "transactional"}
+{"keyword": "muhly grass", "volume": 22200, "cpc": 0.52, "competition": "HIGH", "kd": 2, "intent": "informational"}
+{"keyword": "backyard ideas", "volume": 22200, "cpc": 1.27, "competition": "HIGH", "kd": 19, "intent": "informational"}
+{"keyword": "living rooms idea", "volume": 22200, "cpc": 1.21, "competition": "HIGH", "kd": 37, "intent": "informational"}
+{"keyword": "living room ideas", "volume": 22200, "cpc": 1.21, "competition": "HIGH", "kd": 37, "intent": "informational"}
+{"keyword": "patio awning", "volume": 22200, "cpc": 4.99, "competition": "HIGH", "kd": 16, "intent": "transactional"}
+{"keyword": "outdoor kitchen ideas", "volume": 22200, "cpc": 2.08, "competition": "HIGH", "kd": 29, "intent": "informational"}
+{"keyword": "rental lowes", "volume": 22200, "cpc": 0.69, "competition": "LOW", "kd": null, "intent": "navigational"}
+{"keyword": "scaffolding rental services", "volume": 22200, "cpc": 1.2, "competition": "LOW", "kd": 0, "intent": "navigational"}
+{"keyword": "emergency rental assistance", "volume": 22200, "cpc": 5.37, "competition": "LOW", "kd": 53, "intent": "informational"}
+{"keyword": "tiller rental", "volume": 22200, "cpc": 0.56, "competition": "MEDIUM", "kd": 0, "intent": "commercial"}
+{"keyword": "rental programs assistance", "volume": 22200, "cpc": 4, "competition": "LOW", "kd": null, "intent": "commercial"}
+{"keyword": "backyard designs", "volume": 22200, "cpc": 4.09, "competition": "MEDIUM", "kd": 50, "intent": "informational"}
+{"keyword": "pods rental", "volume": 22200, "cpc": 11.15, "competition": "HIGH", "kd": 32, "intent": "transactional"}
+{"keyword": "patio umbrella with base", "volume": 22200, "cpc": 1.72, "competition": "HIGH", "kd": 5, "intent": "transactional"}
+{"keyword": "raised garden bed ideas", "volume": 22200, "cpc": 0.92, "competition": "HIGH", "kd": 13, "intent": "informational"}
+{"keyword": "design for raised beds", "volume": 22200, "cpc": 0.92, "competition": "HIGH", "kd": null, "intent": "commercial"}
+{"keyword": "rental of pods", "volume": 22200, "cpc": 11.15, "competition": "HIGH", "kd": 32, "intent": "transactional"}
+{"keyword": "taylor rental", "volume": 22200, "cpc": 2.37, "competition": "LOW", "kd": 12, "intent": "navigational"}
+{"keyword": "scissor lift rental", "volume": 22200, "cpc": 4.66, "competition": "MEDIUM", "kd": 0, "intent": "transactional"}
+{"keyword": "river rock landscaping", "volume": 22200, "cpc": 0.79, "competition": "HIGH", "kd": 0, "intent": "commercial"}
+{"keyword": "river rock stone landscaping", "volume": 22200, "cpc": 0.79, "competition": "HIGH", "kd": null, "intent": "commercial"}
+{"keyword": "rental houses for section 8", "volume": 22200, "cpc": 1.98, "competition": "LOW", "kd": null, "intent": "commercial"}
+{"keyword": "small vanity", "volume": 22200, "cpc": 0.74, "competition": "HIGH", "kd": 0, "intent": "transactional"}
+{"keyword": "rental assistance program", "volume": 22200, "cpc": 4, "competition": "LOW", "kd": 46, "intent": "informational"}
+{"keyword": "patio sets with covers", "volume": 22200, "cpc": 7.31, "competition": "HIGH", "kd": 0, "intent": "commercial"}
+{"keyword": "car short term rental", "volume": 22200, "cpc": 4.57, "competition": "HIGH", "kd": null, "intent": "transactional"}
+{"keyword": "raised planting beds ideas", "volume": 22200, "cpc": 0.92, "competition": "HIGH", "kd": null, "intent": "commercial"}
+{"keyword": "chair rental", "volume": 22200, "cpc": 2.99, "competition": "HIGH", "kd": 0, "intent": "transactional"}
+{"keyword": "boom lift rental", "volume": 18100, "cpc": 3.53, "competition": "MEDIUM", "kd": 0, "intent": "transactional"}
+{"keyword": "long time rental cars", "volume": 18100, "cpc": 7.09, "competition": "HIGH", "kd": null, "intent": "informational"}
+{"keyword": "deck railing ideas", "volume": 18100, "cpc": 0.89, "competition": "HIGH", "kd": 0, "intent": "informational"}
+{"keyword": "pavers for patio", "volume": 18100, "cpc": 2.7, "competition": "HIGH", "kd": 16, "intent": "transactional"}
+{"keyword": "outdoor sets for patio", "volume": 18100, "cpc": 1.91, "competition": "HIGH", "kd": null, "intent": "commercial"}
+{"keyword": "garden shed backyard", "volume": 18100, "cpc": 1.02, "competition": "HIGH", "kd": null, "intent": "commercial"}
+{"keyword": "tall grass", "volume": 18100, "cpc": 0.42, "competition": "LOW", "kd": 7, "intent": "informational"}
+{"keyword": "leaves of grass", "volume": 18100, "cpc": 0.71, "competition": "MEDIUM", "kd": 3, "intent": "informational"}
+{"keyword": "small bathroom vanity", "volume": 18100, "cpc": 1.02, "competition": "HIGH", "kd": 0, "intent": "transactional"}
+{"keyword": "rental carpet cleaners lowes", "volume": 18100, "cpc": 0.71, "competition": "LOW", "kd": null, "intent": "commercial"}
+{"keyword": "living room design small spaces", "volume": 18100, "cpc": 1.06, "competition": "HIGH", "kd": null, "intent": "commercial"}
+{"keyword": "rental truck rentals", "volume": 18100, "cpc": 2.61, "competition": "HIGH", "kd": null, "intent": "commercial"}
+{"keyword": "home depot van rental", "volume": 18100, "cpc": 0.21, "competition": "MEDIUM", "kd": 14, "intent": "navigational"}
+{"keyword": "long term car rental", "volume": 18100, "cpc": 7.09, "competition": "HIGH", "kd": 27, "intent": "transactional"}
+{"keyword": "backyard discovery swing set", "volume": 18100, "cpc": 1.24, "competition": "HIGH", "kd": 12, "intent": "transactional"}
+{"keyword": "help with rental", "volume": 18100, "cpc": 5.69, "competition": "MEDIUM", "kd": null, "intent": "transactional"}
+{"keyword": "minivan rental", "volume": 18100, "cpc": 3.55, "competition": "HIGH", "kd": 2, "intent": "transactional"}
+{"keyword": "bedroom ideas", "volume": 18100, "cpc": 1.09, "competition": "HIGH", "kd": 23, "intent": "informational"}
+{"keyword": "car trailer rental", "volume": 18100, "cpc": 2.37, "competition": "MEDIUM", "kd": 11, "intent": "transactional"}
+{"keyword": "vacation rental by owner com", "volume": 18100, "cpc": 0.45, "competition": "MEDIUM", "kd": 68, "intent": "navigational"}
+{"keyword": "pool rental", "volume": 18100, "cpc": 1.24, "competition": "LOW", "kd": 20, "intent": "transactional"}
+{"keyword": "trencher rental", "volume": 18100, "cpc": 1.04, "competition": "MEDIUM", "kd": 0, "intent": "transactional"}
+{"keyword": "rental cars long term", "volume": 18100, "cpc": 7.09, "competition": "HIGH", "kd": 27, "intent": "commercial"}
+{"keyword": "pool indoor", "volume": 18100, "cpc": 1.58, "competition": "LOW", "kd": 1, "intent": "informational"}
+{"keyword": "american rental", "volume": 18100, "cpc": 0.63, "competition": "LOW", "kd": 0, "intent": "commercial"}
+{"keyword": "small sitting rooms designs", "volume": 18100, "cpc": 1.06, "competition": "HIGH", "kd": null, "intent": "commercial"}
+{"keyword": "indoor swimming pool", "volume": 18100, "cpc": 1.4, "competition": "LOW", "kd": 0, "intent": "transactional"}
+{"keyword": "living room set", "volume": 18100, "cpc": 1.49, "competition": "HIGH", "kd": 12, "intent": "transactional"}
+{"keyword": "dave's dvc rental", "volume": 18100, "cpc": 0.71, "competition": "LOW", "kd": 17, "intent": "navigational"}
+{"keyword": "slide door patio", "volume": 18100, "cpc": 5.33, "competition": "HIGH", "kd": null, "intent": "transactional"}
+{"keyword": "8x10 area rugs living room", "volume": 18100, "cpc": 2.11, "competition": "HIGH", "kd": null, "intent": "commercial"}
+{"keyword": "construction equipment rental", "volume": 18100, "cpc": 3.07, "competition": "LOW", "kd": 40, "intent": "commercial"}
+{"keyword": "fake grass", "volume": 18100, "cpc": 2.18, "competition": "HIGH", "kd": 8, "intent": "transactional"}
+{"keyword": "avis rental", "volume": 18100, "cpc": 2.16, "competition": "MEDIUM", "kd": 19, "intent": "commercial"}
+{"keyword": "sheds in backyard", "volume": 18100, "cpc": 1.02, "competition": "HIGH", "kd": null, "intent": "transactional"}
+{"keyword": "patio enclosures", "volume": 18100, "cpc": 24.64, "competition": "HIGH", "kd": 3, "intent": "transactional"}
+{"keyword": "grass pad", "volume": 18100, "cpc": 0.99, "competition": "LOW", "kd": 12, "intent": "transactional"}
+{"keyword": "ideas for a small lounge", "volume": 18100, "cpc": 1.06, "competition": "HIGH", "kd": null, "intent": "informational"}
+{"keyword": "backyard shed", "volume": 18100, "cpc": 1.02, "competition": "HIGH", "kd": 15, "intent": "transactional"}
+{"keyword": "stamped concrete patio", "volume": 18100, "cpc": 6.11, "competition": "MEDIUM", "kd": 6, "intent": "transactional"}
+{"keyword": "rent apt cheap", "volume": 18100, "cpc": 1.92, "competition": "MEDIUM", "kd": null, "intent": "transactional"}
+{"keyword": "contract rental agreement template", "volume": 18100, "cpc": 8.12, "competition": "HIGH", "kd": null, "intent": "transactional"}
+{"keyword": "shed for the backyard", "volume": 18100, "cpc": 1.02, "competition": "HIGH", "kd": null, "intent": "transactional"}
+{"keyword": "ideas for small lounge", "volume": 18100, "cpc": 1.06, "competition": "HIGH", "kd": null, "intent": "informational"}
+{"keyword": "small area living room ideas", "volume": 18100, "cpc": 1.06, "competition": "HIGH", "kd": null, "intent": "commercial"}
+{"keyword": "rooms to go furniture", "volume": 18100, "cpc": 1.37, "competition": "HIGH", "kd": 0, "intent": "transactional"}
+{"keyword": "outside patio set", "volume": 18100, "cpc": 1.91, "competition": "HIGH", "kd": null, "intent": "transactional"}
+{"keyword": "pool fence", "volume": 18100, "cpc": 5.98, "competition": "HIGH", "kd": 0, "intent": "transactional"}
+{"keyword": "lawn aerator rental", "volume": 18100, "cpc": 0.97, "competition": "HIGH", "kd": 0, "intent": "commercial"}
+{"keyword": "patio pavers", "volume": 18100, "cpc": 1.64, "competition": "HIGH", "kd": 16, "intent": "transactional"}
+{"keyword": "outdoor patio set", "volume": 18100, "cpc": 1.91, "competition": "HIGH", "kd": 38, "intent": "transactional"}
+{"keyword": "patio ideas for backyards", "volume": 18100, "cpc": 1.44, "competition": "HIGH", "kd": null, "intent": "commercial"}
+{"keyword": "concrete patio pavers", "volume": 18100, "cpc": 3.08, "competition": "HIGH", "kd": 6, "intent": "transactional"}
+{"keyword": "nido's backyard", "volume": 18100, "cpc": 0.85, "competition": "LOW", "kd": 6, "intent": "transactional"}
+{"keyword": "generator rental", "volume": 18100, "cpc": 3.57, "competition": "HIGH", "kd": 1, "intent": "commercial"}
+{"keyword": "small room living room design", "volume": 18100, "cpc": 1.06, "competition": "HIGH", "kd": null, "intent": "commercial"}
+{"keyword": "equipment construction rental", "volume": 18100, "cpc": 5.23, "competition": "LOW", "kd": null, "intent": "commercial"}
+{"keyword": "backyard patio ideas", "volume": 18100, "cpc": 1.44, "competition": "HIGH", "kd": 21, "intent": "informational"}
+{"keyword": "excavator rental", "volume": 18100, "cpc": 2.52, "competition": "MEDIUM", "kd": 5, "intent": "transactional"}
+{"keyword": "construction rental equipment", "volume": 18100, "cpc": 5.23, "competition": "LOW", "kd": 40, "intent": "commercial"}
+{"keyword": "inground pool", "volume": 18100, "cpc": 5.63, "competition": "HIGH", "kd": 2, "intent": "informational"}
+{"keyword": "small living room ideas", "volume": 18100, "cpc": 1.06, "competition": "HIGH", "kd": 28, "intent": "informational"}
+{"keyword": "room divider ideas", "volume": 18100, "cpc": 0.51, "competition": "HIGH", "kd": 4, "intent": "informational"}
+{"keyword": "price of uhaul rental", "volume": 14800, "cpc": 3.96, "competition": "LOW", "kd": null, "intent": "commercial"}
+{"keyword": "retractable awnings for patio", "volume": 14800, "cpc": 7.14, "competition": "HIGH", "kd": 14, "intent": "transactional"}
+{"keyword": "living room couch", "volume": 14800, "cpc": 1.89, "competition": "HIGH", "kd": 10, "intent": "transactional"}
+{"keyword": "houses vacation rental", "volume": 14800, "cpc": 3.17, "competition": "MEDIUM", "kd": null, "intent": "commercial"}
+{"keyword": "types of grass", "volume": 14800, "cpc": 0.83, "competition": "LOW", "kd": 1, "intent": "informational"}
+{"keyword": "ideas gardening", "volume": 14800, "cpc": 0.64, "competition": "HIGH", "kd": null, "intent": "informational"}
+{"keyword": "outdoor living", "volume": 14800, "cpc": 6.79, "competition": "MEDIUM", "kd": 18, "intent": "informational"}
+{"keyword": "walk in shower ideas", "volume": 14800, "cpc": 3.41, "competition": "HIGH", "kd": 2, "intent": "informational"}
+{"keyword": "outdoor patio", "volume": 14800, "cpc": 2.54, "competition": "HIGH", "kd": 41, "intent": "transactional"}
+{"keyword": "emergency rental assistance program", "volume": 14800, "cpc": 3.62, "competition": "LOW", "kd": 46, "intent": "informational"}
+{"keyword": "vacation properties rental", "volume": 14800, "cpc": 3.17, "competition": "MEDIUM", "kd": null, "intent": "commercial"}
+{"keyword": "cheap homes rental", "volume": 14800, "cpc": 1.36, "competition": "MEDIUM", "kd": null, "intent": "commercial"}
+{"keyword": "backyard landscaping ideas", "volume": 14800, "cpc": 1.66, "competition": "HIGH", "kd": 25, "intent": "informational"}
+{"keyword": "renovation of a small bathroom", "volume": 14800, "cpc": 8.51, "competition": "HIGH", "kd": 2, "intent": "transactional"}
+{"keyword": "storage for rental near me", "volume": 14800, "cpc": 15.88, "competition": "MEDIUM", "kd": null, "intent": "transactional"}
+{"keyword": "backyard bowls", "volume": 14800, "cpc": 1.51, "competition": "LOW", "kd": 1, "intent": "transactional"}
+{"keyword": "blenders in the grass", "volume": 14800, "cpc": 2.27, "competition": "LOW", "kd": 0, "intent": "transactional"}
+{"keyword": "small ac room", "volume": 14800, "cpc": 0.63, "competition": "HIGH", "kd": null, "intent": "transactional"}
+{"keyword": "fountain grass", "volume": 14800, "cpc": 0.33, "competition": "HIGH", "kd": 0, "intent": "informational"}
+{"keyword": "clothing rental", "volume": 14800, "cpc": 5.72, "competition": "HIGH", "kd": 40, "intent": "commercial"}
+{"keyword": "landscaping jobs", "volume": 14800, "cpc": 1.92, "competition": "LOW", "kd": 11, "intent": "informational"}
+{"keyword": "central park cycle rental", "volume": 14800, "cpc": 2.24, "competition": "MEDIUM", "kd": null, "intent": "commercial"}
+{"keyword": "bike rental new york city central park", "volume": 14800, "cpc": 2.24, "competition": "MEDIUM", "kd": null, "intent": "transactional"}
+{"keyword": "washers and dryers rental", "volume": 14800, "cpc": 3.4, "competition": "HIGH", "kd": null, "intent": "commercial"}
+{"keyword": "screened in patio", "volume": 14800, "cpc": 6.79, "competition": "HIGH", "kd": 14, "intent": "transactional"}
+{"keyword": "rv trailer rental", "volume": 14800, "cpc": 2.22, "competition": "HIGH", "kd": 63, "intent": "transactional"}
+{"keyword": "room ideas", "volume": 14800, "cpc": 1.15, "competition": "MEDIUM", "kd": 28, "intent": "informational"}
+{"keyword": "party & tent rental", "volume": 14800, "cpc": 2.73, "competition": "HIGH", "kd": null, "intent": "transactional"}
+{"keyword": "rental leases forms", "volume": 14800, "cpc": 4.6, "competition": "HIGH", "kd": null, "intent": "transactional"}
+{"keyword": "splendor on the grass", "volume": 14800, "cpc": 0.11, "competition": "LOW", "kd": 15, "intent": "informational"}
+{"keyword": "cheap rentals", "volume": 14800, "cpc": 3.19, "competition": "MEDIUM", "kd": 19, "intent": "transactional"}
+{"keyword": "living space", "volume": 14800, "cpc": 2.01, "competition": "HIGH", "kd": 11, "intent": "informational"}
+{"keyword": "rental cabin pigeon forge tn", "volume": 14800, "cpc": 3.02, "competition": "HIGH", "kd": 39, "intent": "transactional"}
+{"keyword": "u haul rental prices", "volume": 14800, "cpc": 3.96, "competition": "LOW", "kd": 31, "intent": "transactional"}
+{"keyword": "cost for uhaul rental", "volume": 14800, "cpc": 3.96, "competition": "LOW", "kd": null, "intent": "commercial"}
+{"keyword": "the rental", "volume": 14800, "cpc": 3.49, "competition": "LOW", "kd": 24, "intent": "commercial"}
+{"keyword": "forms for rental agreements", "volume": 14800, "cpc": 4.6, "competition": "HIGH", "kd": null, "intent": "informational"}
+{"keyword": "house rental charlotte", "volume": 14800, "cpc": 1.77, "competition": "MEDIUM", "kd": 4, "intent": "navigational"}
+{"keyword": "redesigning a small bathroom", "volume": 14800, "cpc": 8.51, "competition": "HIGH", "kd": null, "intent": "transactional"}
+{"keyword": "rental houses orlando florida", "volume": 14800, "cpc": 1.77, "competition": "MEDIUM", "kd": 6, "intent": "transactional"}
+{"keyword": "rental patient bed", "volume": 14800, "cpc": 3.49, "competition": "HIGH", "kd": null, "intent": "transactional"}
+{"keyword": "vrbo vacation rental homes", "volume": 14800, "cpc": 2.01, "competition": "MEDIUM", "kd": null, "intent": "navigational"}
+{"keyword": "greener grass", "volume": 14800, "cpc": 3.31, "competition": "LOW", "kd": 29, "intent": "informational"}
+{"keyword": "garden landscaping", "volume": 14800, "cpc": 5.13, "competition": "LOW", "kd": 22, "intent": "commercial"}
+{"keyword": "splendor in the grass", "volume": 14800, "cpc": 0.11, "competition": "LOW", "kd": 15, "intent": "informational"}
+{"keyword": "small bathroom remodel", "volume": 14800, "cpc": 8.51, "competition": "HIGH", "kd": 10, "intent": "commercial"}
+{"keyword": "landscaping photographs", "volume": 14800, "cpc": 0.58, "competition": "LOW", "kd": null, "intent": "informational"}
+{"keyword": "apartment 16", "volume": 14800, "cpc": 0.99, "competition": "LOW", "kd": 0, "intent": "navigational"}
+{"keyword": "washer and dryer rental", "volume": 14800, "cpc": 3.4, "competition": "HIGH", "kd": 0, "intent": "commercial"}
+{"keyword": "landscaping materials", "volume": 14800, "cpc": 2.2, "competition": "HIGH", "kd": 0, "intent": "commercial"}
+{"keyword": "partytent rental", "volume": 14800, "cpc": 2.73, "competition": "HIGH", "kd": null, "intent": "transactional"}
+{"keyword": "cheap houses for rent", "volume": 14800, "cpc": 1.36, "competition": "MEDIUM", "kd": 0, "intent": "transactional"}
+{"keyword": "bike rental central park", "volume": 14800, "cpc": 2.24, "competition": "MEDIUM", "kd": 10, "intent": "commercial"}
+{"keyword": "backyard landscapes ideas", "volume": 14800, "cpc": 1.66, "competition": "HIGH", "kd": null, "intent": "commercial"}
+{"keyword": "a1 rental", "volume": 14800, "cpc": 2.15, "competition": "LOW", "kd": 16, "intent": "navigational"}
+{"keyword": "backyard dallas", "volume": 14800, "cpc": 0.96, "competition": "LOW", "kd": 3, "intent": "commercial"}
+{"keyword": "grass lawn type", "volume": 14800, "cpc": 0.83, "competition": "LOW", "kd": null, "intent": "informational"}
+{"keyword": "landscaping & gardening", "volume": 14800, "cpc": 5.13, "competition": "LOW", "kd": null, "intent": "informational"}
+{"keyword": "garden ideas", "volume": 14800, "cpc": 0.64, "competition": "HIGH", "kd": 30, "intent": "informational"}
+{"keyword": "pool deck", "volume": 14800, "cpc": 3.3, "competition": "HIGH", "kd": 0, "intent": "transactional"}
+{"keyword": "splendor and the grass", "volume": 14800, "cpc": 0.11, "competition": "LOW", "kd": null, "intent": "informational"}
+{"keyword": "beach rental house", "volume": 14800, "cpc": 1.86, "competition": "MEDIUM", "kd": null, "intent": "navigational"}
+{"keyword": "house rental in indianapolis", "volume": 12100, "cpc": 1.38, "competition": "MEDIUM", "kd": null, "intent": "transactional"}
+{"keyword": "gaming room ideas", "volume": 12100, "cpc": 0.84, "competition": "HIGH", "kd": 5, "intent": "informational"}
+{"keyword": "men's wearhouse tuxedo rental", "volume": 12100, "cpc": 2.85, "competition": "HIGH", "kd": 4, "intent": "transactional"}
+{"keyword": "hertz rental return", "volume": 12100, "cpc": 2.17, "competition": "LOW", "kd": 2, "intent": "navigational"}
+{"keyword": "sod grass", "volume": 12100, "cpc": 2.3, "competition": "HIGH", "kd": 16, "intent": "transactional"}
+{"keyword": "concrete grinder rental", "volume": 12100, "cpc": 1, "competition": "MEDIUM", "kd": 0, "intent": "commercial"}
+{"keyword": "columbus ohio rental houses", "volume": 12100, "cpc": 1.24, "competition": "HIGH", "kd": null, "intent": "transactional"}
+{"keyword": "car rental prices", "volume": 12100, "cpc": 1.94, "competition": "MEDIUM", "kd": 77, "intent": "commercial"}
+{"keyword": "living with the land", "volume": 12100, "cpc": 15.07, "competition": "LOW", "kd": 6, "intent": "informational"}
+{"keyword": "rental of paint sprayer", "volume": 12100, "cpc": 0.65, "competition": "HIGH", "kd": null, "intent": "transactional"}
+{"keyword": "house rental in greensboro nc", "volume": 12100, "cpc": 0.98, "competition": "MEDIUM", "kd": 0, "intent": "transactional"}
+{"keyword": "thrifty rental los angeles airport", "volume": 12100, "cpc": 1.68, "competition": "LOW", "kd": null, "intent": "commercial"}
+{"keyword": "patio shades", "volume": 12100, "cpc": 2.48, "competition": "HIGH", "kd": 10, "intent": "commercial"}
+{"keyword": "greensboro nc rental homes", "volume": 12100, "cpc": 0.98, "competition": "MEDIUM", "kd": null, "intent": "transactional"}
+{"keyword": "furniture rental", "volume": 12100, "cpc": 3.28, "competition": "HIGH", "kd": 61, "intent": "commercial"}
+{"keyword": "concrete patio", "volume": 12100, "cpc": 13.2, "competition": "MEDIUM", "kd": 6, "intent": "transactional"}
+{"keyword": "lawn mower rental", "volume": 12100, "cpc": 0.96, "competition": "MEDIUM", "kd": 0, "intent": "transactional"}
+{"keyword": "rental house in memphis tn", "volume": 12100, "cpc": 1.27, "competition": "MEDIUM", "kd": null, "intent": "navigational"}
+{"keyword": "rental houses in lubbock tx", "volume": 12100, "cpc": 0.93, "competition": "MEDIUM", "kd": null, "intent": "transactional"}
+{"keyword": "event space rental", "volume": 12100, "cpc": 3.06, "competition": "MEDIUM", "kd": 12, "intent": "transactional"}
+{"keyword": "apartment tampa florida rent", "volume": 12100, "cpc": 2.79, "competition": "HIGH", "kd": null, "intent": "transactional"}
+{"keyword": "wood splitter rental", "volume": 12100, "cpc": 0.69, "competition": "MEDIUM", "kd": 0, "intent": "commercial"}
+{"keyword": "patio ideas", "volume": 12100, "cpc": 1.23, "competition": "HIGH", "kd": 11, "intent": "informational"}
+{"keyword": "white rocks for landscaping", "volume": 12100, "cpc": 0.4, "competition": "HIGH", "kd": 0, "intent": "transactional"}
+{"keyword": "office of rental", "volume": 12100, "cpc": 11.27, "competition": "MEDIUM", "kd": null, "intent": "navigational"}
+{"keyword": "holiday cottages for rental", "volume": 12100, "cpc": 4.24, "competition": "LOW", "kd": null, "intent": "commercial"}
+{"keyword": "shade for a patio", "volume": 12100, "cpc": 3.4, "competition": "HIGH", "kd": 10, "intent": "transactional"}
+{"keyword": "cheap rentals near me", "volume": 12100, "cpc": 2.04, "competition": "MEDIUM", "kd": 10, "intent": "commercial"}
+{"keyword": "phoenix arizona rental house", "volume": 12100, "cpc": 2.55, "competition": "MEDIUM", "kd": null, "intent": "navigational"}
+{"keyword": "shading a patio", "volume": 12100, "cpc": 3.4, "competition": "HIGH", "kd": 10, "intent": "transactional"}
+{"keyword": "auger rental", "volume": 12100, "cpc": 0.8, "competition": "HIGH", "kd": 0, "intent": "navigational"}
+{"keyword": "master bath bathroom ideas", "volume": 12100, "cpc": 1.24, "competition": "HIGH", "kd": null, "intent": "commercial"}
+{"keyword": "rental car sales", "volume": 12100, "cpc": 1.96, "competition": "HIGH", "kd": 28, "intent": "transactional"}
+{"keyword": "cabin rental in gatlinburg tenn", "volume": 12100, "cpc": 2.85, "competition": "HIGH", "kd": null, "intent": "transactional"}
+{"keyword": "tampa apartment rental", "volume": 12100, "cpc": 2.79, "competition": "HIGH", "kd": null, "intent": "transactional"}
+{"keyword": "house rental memphis tn", "volume": 12100, "cpc": 1.27, "competition": "MEDIUM", "kd": null, "intent": "navigational"}
+{"keyword": "grand rental station", "volume": 12100, "cpc": 2.73, "competition": "LOW", "kd": 3, "intent": "navigational"}
+{"keyword": "patio shade", "volume": 12100, "cpc": 3.4, "competition": "HIGH", "kd": 10, "intent": "transactional"}
+{"keyword": "bathroom vanity sinks small", "volume": 12100, "cpc": 0.84, "competition": "HIGH", "kd": null, "intent": "transactional"}
+{"keyword": "small bathroom vanity with sink", "volume": 12100, "cpc": 0.84, "competition": "HIGH", "kd": 0, "intent": "transactional"}
+{"keyword": "florida house rental", "volume": 12100, "cpc": 1.83, "competition": "MEDIUM", "kd": null, "intent": "transactional"}
+{"keyword": "food truck rental", "volume": 12100, "cpc": 4.08, "competition": "MEDIUM", "kd": 0, "intent": "transactional"}
+{"keyword": "disney stroller rental", "volume": 12100, "cpc": 2.52, "competition": "MEDIUM", "kd": 19, "intent": "transactional"}
+{"keyword": "phoenix az rental homes", "volume": 12100, "cpc": 2.55, "competition": "MEDIUM", "kd": null, "intent": "navigational"}
+{"keyword": "house rental in austin", "volume": 12100, "cpc": 1.89, "competition": "MEDIUM", "kd": null, "intent": "transactional"}
+{"keyword": "lubbock home rental", "volume": 12100, "cpc": 0.93, "competition": "MEDIUM", "kd": null, "intent": "transactional"}
+{"keyword": "shade sails for patio", "volume": 12100, "cpc": 2.18, "competition": "HIGH", "kd": 0, "intent": "transactional"}
+{"keyword": "small bathroom sinks vanities", "volume": 12100, "cpc": 0.84, "competition": "HIGH", "kd": null, "intent": "transactional"}
+{"keyword": "grass grub lawn", "volume": 12100, "cpc": 0.91, "competition": "HIGH", "kd": null, "intent": "transactional"}
+{"keyword": "greensboro house rental", "volume": 12100, "cpc": 0.98, "competition": "MEDIUM", "kd": null, "intent": "navigational"}
+{"keyword": "eagle rental", "volume": 12100, "cpc": 2.71, "competition": "LOW", "kd": 0, "intent": "navigational"}
+{"keyword": "rental water slides inflatable", "volume": 12100, "cpc": 3.34, "competition": "HIGH", "kd": null, "intent": "commercial"}
+{"keyword": "master bathroom ideas", "volume": 12100, "cpc": 1.24, "competition": "HIGH", "kd": 20, "intent": "informational"}
+{"keyword": "rental in san francisco", "volume": 12100, "cpc": 1.61, "competition": "MEDIUM", "kd": null, "intent": "transactional"}
+{"keyword": "closet design", "volume": 12100, "cpc": 22.17, "competition": "HIGH", "kd": 29, "intent": "commercial"}
+{"keyword": "landscape pictures", "volume": 12100, "cpc": 0.79, "competition": "MEDIUM", "kd": 0, "intent": "informational"}
+{"keyword": "grass texture", "volume": 12100, "cpc": 2.37, "competition": "LOW", "kd": 0, "intent": "informational"}
+{"keyword": "rental agreement", "volume": 12100, "cpc": 5.77, "competition": "HIGH", "kd": 23, "intent": "informational"}
+{"keyword": "patio swing", "volume": 12100, "cpc": 0.95, "competition": "HIGH", "kd": 11, "intent": "transactional"}
+{"keyword": "back yard pool", "volume": 12100, "cpc": 2.02, "competition": "HIGH", "kd": 10, "intent": "transactional"}
+{"keyword": "durable outdoor furniture", "volume": 12100, "cpc": 5.76, "competition": "HIGH", "kd": 37, "intent": "transactional"}
+{"keyword": "lift rental", "volume": 12100, "cpc": 3.38, "competition": "HIGH", "kd": 0, "intent": "transactional"}
+{"keyword": "flagstone patio", "volume": 12100, "cpc": 1.99, "competition": "HIGH", "kd": 0, "intent": "transactional"}
+{"keyword": "concrete mixer rental", "volume": 12100, "cpc": 0.69, "competition": "MEDIUM", "kd": 0, "intent": "commercial"}
+{"keyword": "rental seattle apartment", "volume": 12100, "cpc": 2.41, "competition": "MEDIUM", "kd": null, "intent": "navigational"}
+{"keyword": "evolve vacation rental", "volume": 12100, "cpc": 1.83, "competition": "MEDIUM", "kd": 17, "intent": "transactional"}
+{"keyword": "inflatable water slide rental", "volume": 12100, "cpc": 3.34, "competition": "HIGH", "kd": 23, "intent": "transactional"}
+{"keyword": "front porch ideas", "volume": 12100, "cpc": 0.98, "competition": "HIGH", "kd": 6, "intent": "informational"}
+{"keyword": "log splitter rental", "volume": 12100, "cpc": 0.64, "competition": "MEDIUM", "kd": 0, "intent": "transactional"}
+{"keyword": "paver patio", "volume": 12100, "cpc": 3.9, "competition": "HIGH", "kd": 16, "intent": "transactional"}
+{"keyword": "residential rental agreement lease", "volume": 12100, "cpc": 5.77, "competition": "HIGH", "kd": null, "intent": "transactional"}
+{"keyword": "dunk tank rental", "volume": 12100, "cpc": 2.53, "competition": "MEDIUM", "kd": 0, "intent": "transactional"}
+{"keyword": "backyard pool", "volume": 12100, "cpc": 2.02, "competition": "HIGH", "kd": 10, "intent": "informational"}
+{"keyword": "dance floor rental", "volume": 12100, "cpc": 2.72, "competition": "HIGH", "kd": 0, "intent": "transactional"}
+{"keyword": "turf grass", "volume": 12100, "cpc": 6.19, "competition": "HIGH", "kd": 10, "intent": "informational"}
+{"keyword": "tampa apt rental", "volume": 12100, "cpc": 2.79, "competition": "HIGH", "kd": null, "intent": "navigational"}
+{"keyword": "cort furniture rental", "volume": 12100, "cpc": 1.87, "competition": "MEDIUM", "kd": 34, "intent": "commercial"}
+{"keyword": "sixt rental", "volume": 12100, "cpc": 0.96, "competition": "MEDIUM", "kd": 6, "intent": "transactional"}
+{"keyword": "slingshot rental", "volume": 12100, "cpc": 1.71, "competition": "MEDIUM", "kd": 29, "intent": "transactional"}
+{"keyword": "modern bathroom", "volume": 12100, "cpc": 3.24, "competition": "HIGH", "kd": 16, "intent": "transactional"}
+{"keyword": "rental of lawn mowers", "volume": 12100, "cpc": 0.96, "competition": "MEDIUM", "kd": null, "intent": "commercial"}
+{"keyword": "grass sod lawns", "volume": 12100, "cpc": 2.3, "competition": "HIGH", "kd": null, "intent": "commercial"}
+{"keyword": "lift for rental", "volume": 12100, "cpc": 3.38, "competition": "HIGH", "kd": null, "intent": "transactional"}
+{"keyword": "floating shelves living room", "volume": 12100, "cpc": 1.04, "competition": "HIGH", "kd": 17, "intent": "transactional"}
+{"keyword": "floor sander rental", "volume": 12100, "cpc": 0.97, "competition": "MEDIUM", "kd": 5, "intent": "transactional"}
+{"keyword": "living room de or", "volume": 12100, "cpc": 0.88, "competition": "HIGH", "kd": null, "intent": "navigational"}
+{"keyword": "rental leasing agreement", "volume": 12100, "cpc": 5.77, "competition": "HIGH", "kd": null, "intent": "transactional"}
+{"keyword": "paint sprayer rental", "volume": 12100, "cpc": 0.65, "competition": "HIGH", "kd": 0, "intent": "transactional"}
+{"keyword": "rental home in dallas", "volume": 12100, "cpc": 1.82, "competition": "MEDIUM", "kd": null, "intent": "transactional"}
+{"keyword": "ideas closets", "volume": 9900, "cpc": 1.31, "competition": "HIGH", "kd": null, "intent": "informational"}
+{"keyword": "rooms to go furniture beds", "volume": 9900, "cpc": 1.54, "competition": "HIGH", "kd": null, "intent": "transactional"}
+{"keyword": "rental house in nashville tn", "volume": 9900, "cpc": 2.02, "competition": "HIGH", "kd": 0, "intent": "transactional"}
+{"keyword": "loft living login", "volume": 9900, "cpc": null, "competition": "LOW", "kd": 52, "intent": "navigational"}
+{"keyword": "backyard desert ridge", "volume": 9900, "cpc": 0.72, "competition": "LOW", "kd": 9, "intent": "informational"}
+{"keyword": "rent apartment in london uk", "volume": 9900, "cpc": 1.73, "competition": "MEDIUM", "kd": null, "intent": "transactional"}
+{"keyword": "bathroom idea small", "volume": 9900, "cpc": 0.98, "competition": "HIGH", "kd": null, "intent": "informational"}
+{"keyword": "grass clipart", "volume": 9900, "cpc": 0.15, "competition": "LOW", "kd": 0, "intent": "informational"}
+{"keyword": "living room floating shelves", "volume": 9900, "cpc": 1.1, "competition": "HIGH", "kd": 0, "intent": "transactional"}
+{"keyword": "ideas mudroom", "volume": 9900, "cpc": 0.81, "competition": "HIGH", "kd": null, "intent": "informational"}
+{"keyword": "screened in porch ideas", "volume": 9900, "cpc": 3.07, "competition": "HIGH", "kd": 7, "intent": "informational"}
+{"keyword": "motorhome rental", "volume": 9900, "cpc": 1.83, "competition": "HIGH", "kd": 83, "intent": "transactional"}
+{"keyword": "greenville sc rental house", "volume": 9900, "cpc": 1.33, "competition": "MEDIUM", "kd": null, "intent": "transactional"}
+{"keyword": "free rental agreement template", "volume": 9900, "cpc": 6.61, "competition": "MEDIUM", "kd": 23, "intent": "informational"}
+{"keyword": "pool rooms", "volume": 9900, "cpc": 0.92, "competition": "LOW", "kd": 9, "intent": "informational"}
+{"keyword": "national rental", "volume": 9900, "cpc": 1.49, "competition": "MEDIUM", "kd": 12, "intent": "commercial"}
+{"keyword": "landscaping and mulch", "volume": 9900, "cpc": 1.25, "competition": "HIGH", "kd": null, "intent": "commercial"}
+{"keyword": "aaa rental", "volume": 9900, "cpc": 4.12, "competition": "LOW", "kd": 12, "intent": "navigational"}
+{"keyword": "vacation home rental agencies", "volume": 9900, "cpc": 2.7, "competition": "LOW", "kd": 88, "intent": "commercial"}
+{"keyword": "reseed grass lawn", "volume": 9900, "cpc": 1.95, "competition": "HIGH", "kd": null, "intent": "transactional"}
+{"keyword": "pet friendly vacation home rental", "volume": 9900, "cpc": 2.17, "competition": "LOW", "kd": null, "intent": "commercial"}
+{"keyword": "rental houses in amarillo texas", "volume": 9900, "cpc": 0.8, "competition": "MEDIUM", "kd": null, "intent": "transactional"}
+{"keyword": "large rocks for landscaping", "volume": 9900, "cpc": 0.77, "competition": "HIGH", "kd": 0, "intent": "transactional"}
+{"keyword": "vacation home rental companies", "volume": 9900, "cpc": 2.7, "competition": "LOW", "kd": 71, "intent": "commercial"}
+{"keyword": "ideas for patio coverings", "volume": 9900, "cpc": 2.05, "competition": "HIGH", "kd": 0, "intent": "informational"}
+{"keyword": "master bed room ideas", "volume": 9900, "cpc": 1.68, "competition": "HIGH", "kd": null, "intent": "informational"}
+{"keyword": "bedroom ideas for gamer", "volume": 9900, "cpc": 1.05, "competition": "HIGH", "kd": null, "intent": "commercial"}
+{"keyword": "211 rental assistance", "volume": 9900, "cpc": 4.4, "competition": "LOW", "kd": 100, "intent": "informational"}
+{"keyword": "rental lease forms free", "volume": 9900, "cpc": 6.61, "competition": "MEDIUM", "kd": null, "intent": "transactional"}
+{"keyword": "rug patio", "volume": 9900, "cpc": 1.22, "competition": "HIGH", "kd": null, "intent": "navigational"}
+{"keyword": "pet friendly vacation rentals", "volume": 9900, "cpc": 2.17, "competition": "LOW", "kd": 10, "intent": "transactional"}
+{"keyword": "small space bathrooms ideas", "volume": 9900, "cpc": 0.98, "competition": "HIGH", "kd": null, "intent": "commercial"}
+{"keyword": "lowe's carpet cleaning rental", "volume": 9900, "cpc": 0.88, "competition": "LOW", "kd": 0, "intent": "navigational"}
+{"keyword": "ideas for a mud room", "volume": 9900, "cpc": 0.81, "competition": "HIGH", "kd": null, "intent": "informational"}
+{"keyword": "game room ideas", "volume": 9900, "cpc": 1.05, "competition": "HIGH", "kd": 13, "intent": "informational"}
+{"keyword": "greenville sc home rental", "volume": 9900, "cpc": 1.33, "competition": "MEDIUM", "kd": null, "intent": "transactional"}
+{"keyword": "rental house in nj", "volume": 9900, "cpc": 0.99, "competition": "MEDIUM", "kd": null, "intent": "transactional"}
+{"keyword": "rental on the beach", "volume": 9900, "cpc": 2.07, "competition": "LOW", "kd": null, "intent": "transactional"}
+{"keyword": "floating vanity for small bathroom", "volume": 9900, "cpc": 1.64, "competition": "HIGH", "kd": 2, "intent": "transactional"}
+{"keyword": "brush hog rental", "volume": 9900, "cpc": 1.53, "competition": "MEDIUM", "kd": 0, "intent": "commercial"}
+{"keyword": "small laundry room ideas", "volume": 9900, "cpc": 0.54, "competition": "HIGH", "kd": 1, "intent": "informational"}
+{"keyword": "mudroom ideas", "volume": 9900, "cpc": 0.81, "competition": "HIGH", "kd": 10, "intent": "informational"}
+{"keyword": "outdoor curtains for patio", "volume": 9900, "cpc": 1.34, "competition": "HIGH", "kd": 0, "intent": "transactional"}
+{"keyword": "small floating bathroom vanity", "volume": 9900, "cpc": 1.34, "competition": "MEDIUM", "kd": 2, "intent": "transactional"}
+{"keyword": "patio cover ideas", "volume": 9900, "cpc": 2.05, "competition": "HIGH", "kd": 0, "intent": "informational"}
+{"keyword": "design layout of room", "volume": 9900, "cpc": 2.69, "competition": "MEDIUM", "kd": null, "intent": "informational"}
+{"keyword": "dethatcher rental", "volume": 9900, "cpc": 0.67, "competition": "MEDIUM", "kd": 0, "intent": "commercial"}
+{"keyword": "rental equipment", "volume": 9900, "cpc": 3.1, "competition": "MEDIUM", "kd": 42, "intent": "commercial"}
+{"keyword": "comfortable living room seating", "volume": 9900, "cpc": 1.05, "competition": "HIGH", "kd": 10, "intent": "transactional"}
+{"keyword": "ladder rental", "volume": 9900, "cpc": 0.59, "competition": "MEDIUM", "kd": 0, "intent": "transactional"}
+{"keyword": "rooms to go furniture bedroom", "volume": 9900, "cpc": 1.54, "competition": "HIGH", "kd": null, "intent": "transactional"}
+{"keyword": "lake powell rental houseboats", "volume": 9900, "cpc": 1.71, "competition": "MEDIUM", "kd": null, "intent": "transactional"}
+{"keyword": "house rental in new jersey", "volume": 9900, "cpc": 0.99, "competition": "MEDIUM", "kd": null, "intent": "transactional"}
+{"keyword": "comfortable seating for living room", "volume": 9900, "cpc": 1.05, "competition": "HIGH", "kd": 10, "intent": "transactional"}
+{"keyword": "rent an apartment denver", "volume": 9900, "cpc": 4.16, "competition": "HIGH", "kd": null, "intent": "transactional"}
+{"keyword": "walk in closet design", "volume": 9900, "cpc": 6.58, "competition": "HIGH", "kd": 12, "intent": "informational"}
+{"keyword": "ideas on decorating a small bedroom", "volume": 9900, "cpc": 0.72, "competition": "HIGH", "kd": null, "intent": "informational"}
+{"keyword": "private jet rental", "volume": 9900, "cpc": 9.16, "competition": "HIGH", "kd": 42, "intent": "transactional"}
+{"keyword": "arts rental", "volume": 9900, "cpc": 4.38, "competition": "LOW", "kd": 0, "intent": "transactional"}
+{"keyword": "public bike rental", "volume": 9900, "cpc": null, "competition": "LOW", "kd": 68, "intent": "commercial"}
+{"keyword": "rental houses va beach", "volume": 9900, "cpc": 1.07, "competition": "MEDIUM", "kd": null, "intent": "commercial"}
+{"keyword": "closet walk in design", "volume": 9900, "cpc": 6.58, "competition": "HIGH", "kd": null, "intent": "informational"}
+{"keyword": "rental houses in greenville south carolina", "volume": 9900, "cpc": 1.33, "competition": "MEDIUM", "kd": null, "intent": "commercial"}
+{"keyword": "living room in spanish", "volume": 9900, "cpc": 1.37, "competition": "LOW", "kd": 0, "intent": "informational"}
+{"keyword": "landscaping arts", "volume": 9900, "cpc": 1.69, "competition": "HIGH", "kd": null, "intent": "informational"}
+{"keyword": "rental friends", "volume": 9900, "cpc": 2.54, "competition": "LOW", "kd": null, "intent": "informational"}
+{"keyword": "greenville sc rental home", "volume": 9900, "cpc": 1.33, "competition": "MEDIUM", "kd": null, "intent": "transactional"}
+{"keyword": "garden design", "volume": 9900, "cpc": 2.41, "competition": "HIGH", "kd": 37, "intent": "informational"}
+{"keyword": "rooms to go furniture sofas", "volume": 9900, "cpc": 1.47, "competition": "HIGH", "kd": null, "intent": "commercial"}
+{"keyword": "rental company", "volume": 9900, "cpc": 3.37, "competition": "MEDIUM", "kd": 38, "intent": "commercial"}
+{"keyword": "covering a patio ideas", "volume": 9900, "cpc": 2.05, "competition": "HIGH", "kd": 0, "intent": "informational"}
+{"keyword": "two friends patio", "volume": 9900, "cpc": 0.46, "competition": "LOW", "kd": 36, "intent": "informational"}
+{"keyword": "holiday rental", "volume": 9900, "cpc": 3.46, "competition": "LOW", "kd": 74, "intent": "transactional"}
+{"keyword": "renter", "volume": 9900, "cpc": 4.39, "competition": "LOW", "kd": 25, "intent": "transactional"}
+{"keyword": "modern bathroom theme", "volume": 9900, "cpc": 1.17, "competition": "HIGH", "kd": null, "intent": "informational"}
+{"keyword": "sample rental agreement free", "volume": 9900, "cpc": 6.61, "competition": "MEDIUM", "kd": null, "intent": "transactional"}
+{"keyword": "tall fescue grass", "volume": 9900, "cpc": 0.76, "competition": "HIGH", "kd": 0, "intent": "informational"}
+{"keyword": "alamo rental", "volume": 9900, "cpc": 1.45, "competition": "MEDIUM", "kd": 11, "intent": "navigational"}
+{"keyword": "decor ideas for a small bedroom", "volume": 9900, "cpc": 0.72, "competition": "HIGH", "kd": null, "intent": "informational"}
+{"keyword": "patio rugs", "volume": 9900, "cpc": 1.22, "competition": "HIGH", "kd": 10, "intent": "transactional"}
+{"keyword": "small sofas for small spaces", "volume": 9900, "cpc": 1.87, "competition": "HIGH", "kd": 0, "intent": "transactional"}
+{"keyword": "rental of tiller", "volume": 9900, "cpc": 0.49, "competition": "MEDIUM", "kd": null, "intent": "transactional"}
+{"keyword": "hertz rental with aaa", "volume": 9900, "cpc": 0.96, "competition": "MEDIUM", "kd": null, "intent": "transactional"}
+{"keyword": "moving van rental", "volume": 9900, "cpc": 3.32, "competition": "HIGH", "kd": 51, "intent": "transactional"}
+{"keyword": "rental vans", "volume": 9900, "cpc": 2.68, "competition": "HIGH", "kd": 13, "intent": "commercial"}
+{"keyword": "rental london flat", "volume": 9900, "cpc": 1.73, "competition": "MEDIUM", "kd": null, "intent": "transactional"}
+{"keyword": "walk in closet ideas", "volume": 9900, "cpc": 1.55, "competition": "HIGH", "kd": 10, "intent": "informational"}
+{"keyword": "mobile alabama apartment", "volume": 9900, "cpc": 1.49, "competition": "MEDIUM", "kd": 5, "intent": "navigational"}
+{"keyword": "beachfront vacation rental", "volume": 9900, "cpc": 2.43, "competition": "LOW", "kd": 20, "intent": "transactional"}
+{"keyword": "vacation rental houses in gulf shores", "volume": 9900, "cpc": 3.64, "competition": "MEDIUM", "kd": null, "intent": "commercial"}
+{"keyword": "long beach rent apartment", "volume": 9900, "cpc": 1.44, "competition": "HIGH", "kd": 0, "intent": "transactional"}
+{"keyword": "outdoor dining set for patio", "volume": 9900, "cpc": 2.66, "competition": "HIGH", "kd": null, "intent": "transactional"}
+{"keyword": "backyard playground", "volume": 9900, "cpc": 1.4, "competition": "HIGH", "kd": 15, "intent": "informational"}
+{"keyword": "playsets for the backyard", "volume": 9900, "cpc": 1.92, "competition": "HIGH", "kd": null, "intent": "commercial"}
+{"keyword": "lime and grass", "volume": 9900, "cpc": 0.28, "competition": "HIGH", "kd": null, "intent": "informational"}
+{"keyword": "rental houses in los angeles", "volume": 9900, "cpc": 1.05, "competition": "MEDIUM", "kd": null, "intent": "transactional"}
+{"keyword": "using mulch for landscaping", "volume": 9900, "cpc": 1.25, "competition": "HIGH", "kd": null, "intent": "transactional"}
+{"keyword": "lime in grass", "volume": 9900, "cpc": 0.28, "competition": "HIGH", "kd": null, "intent": "informational"}
+{"keyword": "bike on rental", "volume": 9900, "cpc": 1.94, "competition": "LOW", "kd": null, "intent": "transactional"}
+{"keyword": "rental homes amarillo", "volume": 9900, "cpc": 0.8, "competition": "MEDIUM", "kd": null, "intent": "navigational"}
+{"keyword": "master bedroom ideas", "volume": 9900, "cpc": 1.68, "competition": "HIGH", "kd": 6, "intent": "informational"}
+{"keyword": "front yard landscaping", "volume": 9900, "cpc": 2.32, "competition": "HIGH", "kd": 11, "intent": "commercial"}
+{"keyword": "small laundry room idea", "volume": 9900, "cpc": 0.54, "competition": "HIGH", "kd": null, "intent": "commercial"}
+{"keyword": "closet ideas", "volume": 9900, "cpc": 1.31, "competition": "HIGH", "kd": 37, "intent": "informational"}
+{"keyword": "tent rental-wedding", "volume": 9900, "cpc": 2.93, "competition": "HIGH", "kd": null, "intent": "transactional"}
+{"keyword": "pet friendly seasonal rentals", "volume": 9900, "cpc": 2.17, "competition": "LOW", "kd": null, "intent": "commercial"}
+{"keyword": "salvation army rental assistance", "volume": 9900, "cpc": 4.59, "competition": "LOW", "kd": 25, "intent": "navigational"}
+{"keyword": "rental house in bakersfield ca", "volume": 9900, "cpc": 0.88, "competition": "MEDIUM", "kd": null, "intent": "transactional"}
+{"keyword": "orchard grass", "volume": 9900, "cpc": 0.75, "competition": "MEDIUM", "kd": 0, "intent": "informational"}
+{"keyword": "u haul trailer rental prices", "volume": 9900, "cpc": 4.03, "competition": "LOW", "kd": 11, "intent": "transactional"}
+{"keyword": "ecological landscaping", "volume": 9900, "cpc": 6.6, "competition": "LOW", "kd": 10, "intent": "informational"}
+{"keyword": "outdoor furniture clearance", "volume": 9900, "cpc": 1.42, "competition": "HIGH", "kd": 2, "intent": "commercial"}
+{"keyword": "small bedroom ideas", "volume": 9900, "cpc": 0.72, "competition": "HIGH", "kd": 15, "intent": "informational"}
+{"keyword": "rental houses fresno", "volume": 9900, "cpc": 0.82, "competition": "MEDIUM", "kd": null, "intent": "transactional"}
+{"keyword": "backyard austin", "volume": 8100, "cpc": 0.62, "competition": "LOW", "kd": 5, "intent": "commercial"}
+{"keyword": "small dresser for bedroom", "volume": 8100, "cpc": 1.2, "competition": "HIGH", "kd": 0, "intent": "transactional"}
+{"keyword": "another word for landscaping", "volume": 8100, "cpc": 0.04, "competition": "LOW", "kd": 0, "intent": "informational"}
+{"keyword": "car florida rental", "volume": 8100, "cpc": 4.17, "competition": "MEDIUM", "kd": null, "intent": "transactional"}
+{"keyword": "modern living room ideas", "volume": 8100, "cpc": 1.22, "competition": "HIGH", "kd": 32, "intent": "informational"}
+{"keyword": "rental home in outer banks", "volume": 8100, "cpc": 2.25, "competition": "MEDIUM", "kd": null, "intent": "navigational"}
+{"keyword": "garage with apartment", "volume": 8100, "cpc": 0.67, "competition": "HIGH", "kd": 0, "intent": "commercial"}
+{"keyword": "closet by design", "volume": 8100, "cpc": 51.2, "competition": "HIGH", "kd": 10, "intent": "transactional"}
+{"keyword": "rental houses in north carolina", "volume": 8100, "cpc": 1.24, "competition": "MEDIUM", "kd": null, "intent": "commercial"}
+{"keyword": "rental houses in savannah georgia", "volume": 8100, "cpc": 1.56, "competition": "MEDIUM", "kd": null, "intent": "commercial"}
+{"keyword": "lounges for pool", "volume": 8100, "cpc": 5.11, "competition": "HIGH", "kd": null, "intent": "transactional"}
+{"keyword": "a to z rental", "volume": 8100, "cpc": 1.22, "competition": "LOW", "kd": 15, "intent": "navigational"}
+{"keyword": "exterior patio tile", "volume": 8100, "cpc": 1.2, "competition": "HIGH", "kd": null, "intent": "transactional"}
+{"keyword": "storage rental", "volume": 8100, "cpc": 16.39, "competition": "MEDIUM", "kd": 41, "intent": "transactional"}
+{"keyword": "stand patio umbrella", "volume": 8100, "cpc": 1.08, "competition": "HIGH", "kd": null, "intent": "transactional"}
+{"keyword": "rental houses savannah georgia", "volume": 8100, "cpc": 1.56, "competition": "MEDIUM", "kd": null, "intent": "transactional"}
+{"keyword": "rental houses in savannah ga", "volume": 8100, "cpc": 1.56, "competition": "MEDIUM", "kd": 0, "intent": "transactional"}
+{"keyword": "outdoor blind for patio", "volume": 8100, "cpc": 2.86, "competition": "HIGH", "kd": 3, "intent": "transactional"}
+{"keyword": "equipment rental companies", "volume": 8100, "cpc": 4.08, "competition": "LOW", "kd": 67, "intent": "commercial"}
+{"keyword": "room design", "volume": 8100, "cpc": 3.63, "competition": "MEDIUM", "kd": 37, "intent": "informational"}
+{"keyword": "grass clippings", "volume": 8100, "cpc": 1.33, "competition": "LOW", "kd": 11, "intent": "transactional"}
+{"keyword": "small patio set", "volume": 8100, "cpc": 0.85, "competition": "HIGH", "kd": 0, "intent": "transactional"}
+{"keyword": "atlanta home rental", "volume": 8100, "cpc": 2.05, "competition": "MEDIUM", "kd": null, "intent": "transactional"}
+{"keyword": "cheap rooms", "volume": 8100, "cpc": 4.21, "competition": "HIGH", "kd": 33, "intent": "commercial"}
+{"keyword": "grass background", "volume": 8100, "cpc": 0.35, "competition": "LOW", "kd": 0, "intent": "informational"}
+{"keyword": "car rental reno", "volume": 8100, "cpc": 5.42, "competition": "HIGH", "kd": 0, "intent": "transactional"}
+{"keyword": "installing a paver stone patio", "volume": 8100, "cpc": 10.65, "competition": "LOW", "kd": null, "intent": "transactional"}
+{"keyword": "design of bed room", "volume": 8100, "cpc": 2.05, "competition": "HIGH", "kd": null, "intent": "informational"}
+{"keyword": "rental in ocean city", "volume": 8100, "cpc": 3.25, "competition": "HIGH", "kd": 27, "intent": "transactional"}
+{"keyword": "rental house in pensacola fl", "volume": 8100, "cpc": 1.58, "competition": "HIGH", "kd": null, "intent": "transactional"}
+{"keyword": "green couch living room", "volume": 8100, "cpc": 2.06, "competition": "HIGH", "kd": 0, "intent": "transactional"}
+{"keyword": "friends apartment", "volume": 8100, "cpc": 1.71, "competition": "LOW", "kd": 2, "intent": "navigational"}
+{"keyword": "zillow listing rental", "volume": 8100, "cpc": 3.06, "competition": "LOW", "kd": 0, "intent": "navigational"}
+{"keyword": "pictures in living room", "volume": 8100, "cpc": 1.03, "competition": "HIGH", "kd": null, "intent": "informational"}
+{"keyword": "paver patio ideas", "volume": 8100, "cpc": 2.25, "competition": "HIGH", "kd": 7, "intent": "transactional"}
+{"keyword": "house rental at myrtle beach", "volume": 8100, "cpc": 2.14, "competition": "HIGH", "kd": 23, "intent": "transactional"}
+{"keyword": "outdoor round patio set", "volume": 8100, "cpc": 3.28, "competition": "HIGH", "kd": null, "intent": "commercial"}
+{"keyword": "rental apartments ri", "volume": 8100, "cpc": 0.87, "competition": "MEDIUM", "kd": 0, "intent": "transactional"}
+{"keyword": "backyard sports", "volume": 8100, "cpc": 0.55, "competition": "LOW", "kd": 21, "intent": "informational"}
+{"keyword": "rental commercial kitchens", "volume": 8100, "cpc": 9.06, "competition": "LOW", "kd": null, "intent": "commercial"}
+{"keyword": "master bedroom design ideas", "volume": 8100, "cpc": 1.46, "competition": "HIGH", "kd": 5, "intent": "informational"}
+{"keyword": "jacksonville rental home", "volume": 8100, "cpc": 2, "competition": "HIGH", "kd": null, "intent": "navigational"}
+{"keyword": "rental house detroit", "volume": 8100, "cpc": 0.95, "competition": "MEDIUM", "kd": null, "intent": "navigational"}
+{"keyword": "house rental north carolina", "volume": 8100, "cpc": 1.28, "competition": "MEDIUM", "kd": 0, "intent": "commercial"}
+{"keyword": "patio blinds outdoor", "volume": 8100, "cpc": 2.86, "competition": "HIGH", "kd": 3, "intent": "transactional"}
+{"keyword": "border for landscaping", "volume": 8100, "cpc": 0.8, "competition": "HIGH", "kd": null, "intent": "informational"}
+{"keyword": "halls rental", "volume": 8100, "cpc": 2.58, "competition": "LOW", "kd": 5, "intent": "commercial"}
+{"keyword": "concrete saw rental", "volume": 8100, "cpc": 0.59, "competition": "HIGH", "kd": 0, "intent": "transactional"}
+{"keyword": "ocmd rental", "volume": 8100, "cpc": 3.25, "competition": "HIGH", "kd": null, "intent": "transactional"}
+{"keyword": "rental homes for low income", "volume": 8100, "cpc": 2.09, "competition": "MEDIUM", "kd": null, "intent": "commercial"}
+{"keyword": "agreement rental sample", "volume": 8100, "cpc": 5.87, "competition": "HIGH", "kd": null, "intent": "transactional"}
+{"keyword": "premier rental", "volume": 8100, "cpc": 2.25, "competition": "LOW", "kd": 9, "intent": "commercial"}
+{"keyword": "privacy screen for a balcony", "volume": 8100, "cpc": 0.46, "competition": "HIGH", "kd": null, "intent": "commercial"}
+{"keyword": "outdoor patio chairs", "volume": 8100, "cpc": 1.77, "competition": "HIGH", "kd": 7, "intent": "transactional"}
+{"keyword": "flatbed trailer rental", "volume": 8100, "cpc": 2.08, "competition": "MEDIUM", "kd": 0, "intent": "transactional"}
+{"keyword": "rental homes reno nevada", "volume": 8100, "cpc": 1.06, "competition": "MEDIUM", "kd": null, "intent": "navigational"}
+{"keyword": "grass field", "volume": 8100, "cpc": 1, "competition": "LOW", "kd": 1, "intent": "informational"}
+{"keyword": "rental home jacksonville", "volume": 8100, "cpc": 2, "competition": "HIGH", "kd": null, "intent": "navigational"}

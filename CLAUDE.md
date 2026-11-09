@@ -37,3 +37,6 @@ All three launch together; Gable & Green is where the engine gets built first.
 - `pnpm web` — dev server for the site in `apps/web/.env` (`SITE_SLUG`).
 - `supabase db push` — apply migrations to the linked cloud project.
 - `pnpm db:types` — regenerate TS types (needs local DB; otherwise `supabase gen types --linked`).
+
+## Shared infrastructure (the one exception to the hub rule)
+- DataForSEO: the API account is shared with Hangkind (a data vendor, nothing brand-specific crosses). Credentials in `.env`; client at `scripts/dfs.py`. Keep calls batched — every call costs cents.
