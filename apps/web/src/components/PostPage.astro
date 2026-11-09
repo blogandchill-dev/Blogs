@@ -3,6 +3,7 @@ import Base from '../layouts/Base.astro';
 import PostBody from './PostBody.astro';
 import PostCard from './PostCard.astro';
 import LeadMagnet from './LeadMagnet.astro';
+import Sidebar from './Sidebar.astro';
 import { getSite, getPublishedPosts, getAuthors, readMinutes, typeLabel, placeholderTone } from '../lib/site';
 import type { Post } from '../lib/site';
 
@@ -20,11 +21,13 @@ const body = hero ? rest.filter(b => b !== hero) : rest;
 const minutes = readMinutes(blocks);
 const sections = body.filter(b => b.type === 'h2').map(b => (b as any).text as string);
 const ideaHeads = sections.filter(t => !/^(what to skip|questions|faq|frequently)/i.test(t));
-const updated = new Date(post.updated_at).toLocaleDateString('en-US', { month: 'long', year: 'numeric' });
+const updated = new Date(post.updated_at).toLocaleDateString('en-US', { month: 'short', year: 'numeric' });
 const pills = (post.meta?.pills as string[] | undefined) ?? [];
 const rentalFriendly = blocks.some(b => b.type === 'callout' && /rental/i.test(b.label));
 const url = `https://${site.domain}/${post.slug}`;
 const pinHref = `https://www.pinterest.com/pin/create/button/?url=${encodeURIComponent(url)}&description=${encodeURIComponent(post.title)}`;
+const nav = site.niche_plan.nav ?? [];
+const crumb = nav.find(n => (n.clusters ?? []).length) ?? nav[0];
 
 const jsonld: any[] = [{
   '@context': 'https://schema.org', '@type': 'Article',
@@ -47,61 +50,52 @@ if (faqs.length) jsonld.push({
 });
 ---
 <Base title={post.title} description={post.excerpt ?? undefined} type="article" jsonld={jsonld} image={hero?.src ?? undefined} noindex={noindex}>
-  <article class="reading" style="padding-top:40px;display:flex;flex-direction:column;gap:26px">
-    <div style="display:flex;flex-wrap:wrap;gap:8px">
-      <span class="pill">{typeLabel(post.type)}</span>
-      {pills.map(p => <span class="pill pill--line">{p}</span>)}
-      {rentalFriendly && <span class="pill pill--info">Rental-friendly</span>}
-    </div>
-    <h1>{post.title}</h1>
-    <div style="display:flex;align-items:center;gap:12px;font-size:14px;color:var(--muted)">
-      <div style="width:36px;height:36px;border-radius:50%;background:var(--sand);flex-shrink:0"></div>
-      <div><a href="/about" style="font-weight:700;color:var(--ink)">{author?.name ?? site.name}</a> · Updated {updated} · {minutes} min read</div>
-    </div>
-    {hero && (
-      <figure style="margin:0">
-        <div class="media" style={`aspect-ratio:16 / 10;background:${placeholderTone(0)}`}>
-          {hero.src && <img src={hero.src} alt={hero.alt} width="1200" height="750" fetchpriority="high" />}
-          {pills[0] && <span class="pill pill--sm pill--white">{pills[0]}</span>}
-        </div>
-        {hero.caption && <figcaption class="caption">{hero.caption}</figcaption>}
-      </figure>
-    )}
-    {lede && <p class="lede" style="font-family:var(--font-display),serif;font-size:23px;line-height:1.5">{lede}</p>}
-    <div style="display:flex;flex-wrap:wrap;gap:10px;align-items:center">
-      <a class="btn btn--accent" href={pinHref} rel="nofollow noopener" target="_blank">Save to Pinterest</a>
-      {post.type === 'ideas' && <a class="btn btn--ink" href="#list">Jump to the list ↓</a>}
-    </div>
-    {post.type === 'ideas' && ideaHeads.length > 3 && (
-      <div class="panel" style="padding:18px 22px;display:flex;flex-direction:column;gap:10px">
-        <div style="font-size:11px;font-weight:800;letter-spacing:.08em;text-transform:uppercase;color:var(--muted)">In this post</div>
-        <div style="display:flex;flex-wrap:wrap;gap:8px">
-          {ideaHeads.slice(0, 6).map((t, i) => <a class="pill pill--white" href={`#s${i + 1}`} style="padding:7px 13px">{i + 1} · {t.length > 26 ? t.slice(0, 24) + '…' : t}</a>)}
-          {ideaHeads.length > 6 && <span class="pill pill--white" style="padding:7px 13px">+{ideaHeads.length - 6} more</span>}
-          <a class="pill pill--white" href="#skip" style="padding:7px 13px">What to skip</a>
+  <div class="wrap post-layout">
+    <article>
+      {crumb && <nav aria-label="Breadcrumb" class="eyebrow"><a href={crumb.href} style="color:inherit;text-decoration:none">{crumb.label}</a> <span aria-hidden="true">›</span> {typeLabel(post.type)}</nav>}
+      <h1>{post.title}</h1>
+      <div style="display:flex;flex-wrap:wrap;gap:10px;align-items:center">
+        {pills.map(p => <span class="pill">{p}</span>)}
+        {rentalFriendly && <span class="pill pill--info">Rental-friendly options</span>}
+        <span style="font-size:13px;color:var(--muted);margin-left:auto">By <a href="/about" style="font-weight:600">{author?.name ?? site.name}</a> · Updated {updated}</span>
+      </div>
+      {lede && <p class="lede" style="font-size:20px;line-height:1.6;font-weight:500">{lede}</p>}
+      {hero && (
+        <figure style="margin:0">
+          <div class="media media--framed" style={`aspect-ratio:4 / 3;background:${placeholderTone(0)}`}>
+            {hero.src && <img src={hero.src} alt={hero.alt} width="1200" height="900" fetchpriority="high" />}
+            {pills[0] && <span class="pill pill--tag">{pills[0]}</span>}
+          </div>
+          {hero.caption && <figcaption class="caption">{hero.caption}</figcaption>}
+        </figure>
+      )}
+      <div style="display:flex;flex-wrap:wrap;gap:12px;align-items:center;border-top:2px solid var(--line);border-bottom:2px solid var(--line);padding:14px 0">
+        {post.type === 'ideas' && <a class="btn btn--ink" href="#list">Jump to the list <span aria-hidden="true">↓</span></a>}
+        <a class="btn" href={pinHref} rel="nofollow noopener" target="_blank">Save to Pinterest</a>
+        <span style="margin-left:auto;font-size:13px;color:var(--muted)">{minutes} min read{post.type === 'ideas' && ideaHeads.length ? ` · ${ideaHeads.length} ideas` : ''}</span>
+      </div>
+      <div class="ad" style="height:100px" aria-label="Advertisement">Advertisement</div>
+      <div id="list"></div>
+      <PostBody blocks={body} numbered={post.type === 'ideas'} />
+      <LeadMagnet />
+      <div class="box" style="display:flex;gap:20px;align-items:center;flex-wrap:wrap">
+        <div style="width:64px;height:64px;background:var(--sand);border:2px solid var(--line);flex-shrink:0"></div>
+        <div style="flex:1 1 320px;display:flex;flex-direction:column;gap:4px">
+          <div style="font-family:var(--font-display),sans-serif;font-weight:800;font-size:15px;text-transform:uppercase">{author?.name ?? site.name}</div>
+          <p class="small">{author?.bio ?? `Ideas and sizing posts are written by the ${site.name} editorial team and checked against manufacturer specs. Buying guides carry a named author.`} <a href="/editorial-policy">How we work</a>.</p>
         </div>
       </div>
-    )}
-    <div class="ad" style="height:100px" aria-label="Advertisement">Advertisement</div>
-    <div id="list"></div>
-    <PostBody blocks={body} numbered={post.type === 'ideas'} />
-    <LeadMagnet />
-    <div style="border:1px solid var(--line);border-radius:var(--radius-lg);padding:20px 24px;display:flex;gap:18px;align-items:center;flex-wrap:wrap">
-      <div style="width:60px;height:60px;border-radius:50%;background:var(--sand);flex-shrink:0"></div>
-      <div style="flex:1 1 320px;display:flex;flex-direction:column;gap:4px">
-        <div style="font-family:var(--font-display),serif;font-weight:500;font-size:19px">{author?.name ?? site.name}</div>
-        <p class="small">{author?.bio ?? `Ideas and sizing posts are written by the ${site.name} editorial team and checked against manufacturer specs. Buying guides carry a named author.`} <a href="/editorial-policy">How we work</a>.</p>
-      </div>
-    </div>
-    {related.length > 0 && (
-      <section style="display:flex;flex-direction:column;gap:16px">
-        <h2 style="font-size:26px">Keep going</h2>
-        <div class="grid grid--3" style="gap:16px">{related.map((p, i) => <PostCard post={p} i={i + 1} />)}</div>
-      </section>
-    )}
-  </article>
+      {related.length > 0 && (
+        <section style="display:flex;flex-direction:column;gap:18px">
+          <div class="kicker rule" style="padding-bottom:10px;font-size:20px;letter-spacing:.02em">Keep going</div>
+          <div class="grid grid--3" style="gap:20px">{related.map((p, i) => <PostCard post={p} i={i + 1} />)}</div>
+        </section>
+      )}
+    </article>
+    <Sidebar exclude={post.id} />
+  </div>
   <div class="sticky-bar">
-    <a class="btn btn--accent" href={pinHref} rel="nofollow noopener" target="_blank">Save</a>
-    <a class="btn btn--line" href="#list">Jump to list</a>
+    <a class="btn btn--info" href={pinHref} rel="nofollow noopener" target="_blank">Save to Pinterest</a>
+    <a class="btn" href="#list">Jump to list</a>
   </div>
 </Base>

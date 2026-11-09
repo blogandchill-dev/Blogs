@@ -5,7 +5,7 @@ export type Tokens = {
   paper: string; ink: string; muted: string; line: string;
   accent: string; accent_ink: string; info: string; info_tint: string;
   sand: string; warn_tint: string; warn_ink: string;
-  radius_sm: string; radius: string; radius_lg: string;
+  radius_sm?: string; radius?: string; radius_lg?: string; rule?: string;
 };
 export type NavItem = { label: string; href: string; blurb?: string; clusters?: string[] };
 export type Site = {

@@ -27,37 +27,44 @@ for (const b of blocks) {
 }
 if (inSkip || inFaq) segs.push({ kind: 'close' });
 
-const calloutClass = (label: string) =>
-  /rental/i.test(label) ? 'callout--info' : /skip|avoid|don.t/i.test(label) ? 'callout--warn' : 'callout--note';
-const calloutPill = (label: string) =>
-  /rental/i.test(label) ? 'pill--info' : /skip|avoid|don.t/i.test(label) ? 'pill--white' : 'pill--line';
+const isWarn = (label: string) => /skip|avoid|don.t/i.test(label);
+const isInfo = (label: string) => /rental/i.test(label);
+const h2id = (s: Seg & { kind: 'block' }, text: string) =>
+  s.num ? `s${s.num}` : /^what to skip/i.test(text) ? 'skip' : /^(questions|faq)/i.test(text) ? 'faq' : undefined;
+const tagFromCaption = (c: string) => {
+  const m = c.match(/^(\$[\d,]+(?:\s?[–-]\s?\$[\d,]+)?|about \$\d+[^.]*|under \$\d+|\d+(?:\.\d+)?\s?(?:×|x)\s?\d+(?:\.\d+)?\s?(?:ft|in)?[^.]*)/i);
+  return m ? m[1].trim() : null;
+};
 ---
 <div class="prose">
   {segs.map(s => {
     if (s.kind === 'skip-open') return <Fragment set:html={'<section class="skip">'} />;
-    if (s.kind === 'faq-open') return <Fragment set:html={'<section style="display:flex;flex-direction:column;gap:12px">'} />;
+    if (s.kind === 'faq-open') return <Fragment set:html={'<section style="display:flex;flex-direction:column;gap:14px">'} />;
     if (s.kind === 'close') return <Fragment set:html={'</section>'} />;
     const b = s.b;
     switch (b.type) {
-      case 'h2': return <h2 id={s.num ? `s${s.num}` : (/^what to skip/i.test(b.text) ? 'skip' : /^(questions|faq)/i.test(b.text) ? 'faq' : undefined)}>{s.num && <span class="num">{s.num}</span>}{b.text}</h2>;
+      case 'h2': return <h2 id={h2id(s, b.text)}>{s.num && <span class="num">{String(s.num).padStart(2, '0')}</span>}{b.text}</h2>;
       case 'h3': return <h3>{b.text}</h3>;
       case 'p': return <p>{b.text}</p>;
       case 'list': return b.ordered ? <ol>{b.items.map(i => <li>{i}</li>)}</ol> : <ul>{b.items.map(i => <li>{i}</li>)}</ul>;
       case 'callout': return (
-        <div class={`callout ${calloutClass(b.label)}`}>
-          <span class={`pill pill--sm ${calloutPill(b.label)}`} style="padding:6px 12px;font-size:12px">{b.label}</span>
+        <div class={`callout ${isInfo(b.label) ? 'callout--info' : isWarn(b.label) ? 'callout--warn' : ''}`}>
+          <span class="label">{b.label}</span>
           <div>{b.text}</div>
         </div>
       );
-      case 'image_slot': return (
-        <figure>
-          <div class="media" style={`aspect-ratio:4 / 3;background:${s.tone}`}>
-            {b.src ? <img src={b.src} alt={b.alt} loading="lazy" width="1200" height="900" /> : null}
-            {b.caption && /\$|ft|in\.|inch|×/.test(b.caption) && <span class="pill pill--sm pill--white">{b.caption.split('.')[0]}</span>}
-          </div>
-          {b.caption && <figcaption class="caption">{b.caption}</figcaption>}
-        </figure>
-      );
+      case 'image_slot': {
+        const tag = b.caption ? tagFromCaption(b.caption) : null;
+        return (
+          <figure>
+            <div class="media" style={`aspect-ratio:4 / 3;background:${s.tone}`}>
+              {b.src ? <img src={b.src} alt={b.alt} loading="lazy" width="1200" height="900" /> : null}
+              {tag && <span class="pill pill--tag">{tag}</span>}
+            </div>
+            {b.caption && <figcaption class="caption">{b.caption}</figcaption>}
+          </figure>
+        );
+      }
     }
   })}
 </div>

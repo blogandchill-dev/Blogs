@@ -11,7 +11,7 @@ const { title, description, image, type = 'website', jsonld, noindex = false } =
 };
 const canonical = new URL(Astro.url.pathname, Astro.site).toString();
 const fullTitle = title ? `${title} · ${site.name}` : `${site.name} — ${site.tagline ?? ''}`.trim();
-const fontHref = `https://fonts.googleapis.com/css2?family=${encodeURIComponent(t.font_display)}:ital,opsz,wght@0,6..72,400;0,6..72,500;1,6..72,400&family=${encodeURIComponent(t.font_ui)}:wght@400;500;600;700;800&display=swap`;
+const fontHref = `https://fonts.googleapis.com/css2?family=${encodeURIComponent(t.font_display)}:wght@500;700;800;900&family=${encodeURIComponent(t.font_ui)}:wght@400;500;600;700&display=swap`;
 ---
 <!doctype html>
 <html lang="en">
@@ -39,8 +39,7 @@ const fontHref = `https://fonts.googleapis.com/css2?family=${encodeURIComponent(
       'font-display': t.font_display, 'font-ui': t.font_ui,
       paper: t.paper, ink: t.ink, muted: t.muted, line: t.line,
       accent: t.accent, 'accent-ink': t.accent_ink, info: t.info, 'info-tint': t.info_tint,
-      sand: t.sand, 'warn-tint': t.warn_tint, 'warn-ink': t.warn_ink,
-      'radius-sm': t.radius_sm, radius: t.radius, 'radius-lg': t.radius_lg,
+      sand: t.sand,
     }}>:root{}</style>
     {jsonld && <script type="application/ld+json" set:html={JSON.stringify(jsonld)} />}
   </head>

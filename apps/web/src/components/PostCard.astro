@@ -1,17 +1,18 @@
 ---
 import type { Post } from '../lib/site';
 import { placeholderTone, typeLabel } from '../lib/site';
-const { post, i = 0, ratio = '4 / 3', boxed = false } = Astro.props as { post: Post; i?: number; ratio?: string; boxed?: boolean };
-const pill = (post.meta?.pill as string) ?? typeLabel(post.type);
+const { post, i = 0, ratio = '4 / 3', row = false } = Astro.props as { post: Post; i?: number; ratio?: string; row?: boolean };
 const hero = post.body?.find(b => b.type === 'image_slot') as any;
+const chips = (post.meta?.pills as string[] | undefined)?.slice(0, 2) ?? [];
 ---
-<a class="card" href={`/${post.slug}`} style={boxed ? 'border:1px solid var(--line);border-radius:var(--radius-lg);padding:10px 10px 18px' : ''}>
-  <div class="media" style={`aspect-ratio:${ratio};background:${placeholderTone(i)}`}>
+<a class={`card ${row ? 'card--row' : ''}`} href={`/${post.slug}`}>
+  <div class="media media--framed" style={row ? `background:${placeholderTone(i)}` : `aspect-ratio:${ratio};background:${placeholderTone(i)}`}>
     {hero?.src && <img src={hero.src} alt={hero.alt ?? ''} loading="lazy" width="800" height="600" />}
-    <span class="pill pill--sm pill--white">{pill}</span>
   </div>
-  <div style={boxed ? 'padding:0 8px;display:flex;flex-direction:column;gap:4px' : 'display:flex;flex-direction:column;gap:4px'}>
+  <div style="display:flex;flex-direction:column;gap:6px">
     <div class="title">{post.title}</div>
-    {post.excerpt && <div class="meta">{post.excerpt}</div>}
+    {row ? <div class="meta">{typeLabel(post.type)}</div> : (
+      chips.length ? <div style="display:flex;gap:6px;flex-wrap:wrap">{chips.map(c => <span class="pill pill--sm">{c}</span>)}</div> : <div class="meta">{typeLabel(post.type)}</div>
+    )}
   </div>
 </a>

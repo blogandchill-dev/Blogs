@@ -1,0 +1,30 @@
+---
+import { getSite, getPublishedPosts } from '../lib/site';
+import PostCard from './PostCard.astro';
+const site = await getSite();
+const { exclude } = Astro.props as { exclude?: string };
+const popular = (await getPublishedPosts(30)).filter(p => p.id !== exclude).slice(0, 4);
+const cta = site.niche_plan.cta;
+---
+<aside>
+  <div class="box box--sand" style="display:flex;flex-direction:column;gap:12px">
+    <div style="font-family:var(--font-display),sans-serif;font-weight:900;font-size:18px;text-transform:uppercase;line-height:1.1">About {site.name}</div>
+    <p style="font-size:14px;line-height:1.55">We measure small spaces so you don't buy the wrong sofa. Every idea here is sized to a real footprint, with the budget version first and a rental-friendly option in every post.</p>
+    <a class="btn btn--ink" href="/about" style="align-self:flex-start;padding:10px 14px;font-size:12px;min-height:0">How we work</a>
+  </div>
+  <div class="ad" style="height:250px" aria-label="Advertisement">Advertisement</div>
+  {cta && (
+    <div class="box box--ink" style="display:flex;flex-direction:column;gap:10px">
+      <div class="eyebrow" style="color:#A9C3B1">The planner · coming soon</div>
+      <div style="font-family:var(--font-display),sans-serif;font-weight:900;font-size:22px;line-height:1.05;text-transform:uppercase">Patio &amp; balcony layout planner</div>
+      <p style="font-size:14px;line-height:1.5;color:#D8E2DB">Printable templates by space size, shopping checklists, a measuring guide.</p>
+      <a class="btn btn--accent" href={cta.href} style="align-self:flex-start;padding:10px 14px;font-size:12px;min-height:0;margin-top:4px">Get the planner</a>
+    </div>
+  )}
+  {popular.length > 0 && (
+    <div class="box" style="display:flex;flex-direction:column;gap:14px">
+      <div class="kicker" style="border-bottom:2px solid var(--line);padding-bottom:8px">Most saved</div>
+      {popular.map((p, i) => <PostCard post={p} i={i} row />)}
+    </div>
+  )}
+</aside>

@@ -6,50 +6,64 @@ const site = await getSite();
 const posts = await getPublishedPosts(40);
 const [lead, ...others] = posts;
 const nav = site.niche_plan.nav ?? [];
+const cta = site.niche_plan.cta;
+const spaces = [...nav.filter(n => !/sizing/i.test(n.label)).map(n => ({ label: n.label, href: n.href })), { label: 'Rental-friendly', href: '/apartments' }];
 ---
-<Base description={site.tagline ?? undefined}>
-  <section class="wrap" style="padding-top:40px;display:flex;flex-direction:column;gap:22px">
-    <div style="display:flex;flex-direction:column;gap:12px;max-width:760px">
-      <h1>Ideas sized to the space you <em style="font-weight:400">actually</em> have.</h1>
-      <p style="font-size:18px;line-height:1.55;color:var(--muted)">Patios, balconies, small yards and small apartments — every idea with dimensions, a price, and a rental-friendly version. Start with your space.</p>
-    </div>
-    <div style="display:flex;flex-wrap:wrap;gap:8px">
-      {nav.map((n, i) => <a class={`pill ${i === 0 ? 'pill--ink' : ''}`} href={n.href} style="padding:12px 18px;font-size:14px">{n.label}</a>)}
-    </div>
-  </section>
-
+<Base description="Small-space ideas with the measurements: patios, balconies, small yards and small apartments — every idea with dimensions, a price and a rental-friendly version.">
   {lead ? (
-    <section class="wrap" style="padding-top:36px">
+    <section class="wrap" style="padding-top:40px">
       <div class="grid" style="grid-template-columns:repeat(12,minmax(0,1fr))">
-        <div style="grid-column:span 7">
-          <PostCard post={lead} i={0} ratio="16 / 10" />
-        </div>
-        <div style="grid-column:span 5" class="grid grid--2" >
-          {others.slice(0, 4).map((p, i) => <PostCard post={p} i={i + 1} ratio="1 / 1" />)}
+        <a href={`/${lead.slug}`} class="card" style="grid-column:span 8">
+          <div class="media media--framed" style={`aspect-ratio:16 / 10;background:${placeholderTone(0)}`}>
+            <span class="pill pill--accent" style="position:absolute;left:16px;top:16px;font-family:var(--font-display),sans-serif;font-weight:900;padding:8px 12px">This week</span>
+          </div>
+          <div style="display:flex;flex-direction:column;gap:8px">
+            <h1 style="font-size:clamp(30px,3.6vw,44px)">{lead.title}</h1>
+            {lead.excerpt && <p style="font-size:17px;line-height:1.55;color:#2A332D">{lead.excerpt}</p>}
+          </div>
+        </a>
+        <div style="grid-column:span 4;display:flex;flex-direction:column;gap:20px">
+          <div class="kicker rule" style="padding-bottom:8px">Also new</div>
+          {others.slice(0, 4).map((p, i) => <PostCard post={p} i={i + 1} row />)}
         </div>
       </div>
     </section>
   ) : (
-    <section class="wrap" style="padding-top:36px"><p class="small">First posts are on their way.</p></section>
-  )}
-
-  {others.length > 4 && (
-    <section class="wrap" style="padding-top:56px;display:flex;flex-direction:column;gap:18px">
-      <div style="display:flex;align-items:baseline;justify-content:space-between;gap:16px;flex-wrap:wrap">
-        <h2 style="font-size:30px">Latest</h2>
-      </div>
-      <div class="grid grid--3">{others.slice(4, 13).map((p, i) => <PostCard post={p} i={i} boxed />)}</div>
+    <section class="wrap" style="padding-top:48px;display:flex;flex-direction:column;gap:16px;max-width:900px">
+      <h1>Small spaces, measured.</h1>
+      <p style="font-size:18px;line-height:1.55;color:#2A332D">Patios, balconies, small yards and small apartments — every idea with dimensions, a price range, what to skip, and a rental-friendly version. First posts are being measured; patios land first, in time for spring.</p>
     </section>
   )}
 
-  <section class="wrap" style="padding-top:56px">
-    <div class="panel" style="padding:44px;display:flex;flex-wrap:wrap;gap:32px;align-items:center">
-      <div style="flex:1 1 360px;display:flex;flex-direction:column;gap:12px">
-        <span class="pill pill--white" style="align-self:flex-start;padding:6px 12px;font-size:12px">Coming soon</span>
-        <div style="font-family:var(--font-display),serif;font-weight:500;font-size:clamp(28px,3.5vw,40px);line-height:1.05;letter-spacing:-.015em">Lay out your patio or balcony before you buy a thing</div>
-        <p style="font-size:16px;line-height:1.55;color:var(--muted)">Printable templates to scale for common footprints, a furniture size table, shopping checklists by budget, and a measuring guide.</p>
-      </div>
-      <div style="flex:1 1 320px;aspect-ratio:4 / 3;border-radius:var(--radius);background:#D8D1C4"></div>
+  <section class="wrap" style="padding-top:48px;display:flex;flex-direction:column;gap:20px">
+    <div class="kicker rule" style="padding-bottom:8px">Start with your space</div>
+    <div class="grid grid--6">
+      {spaces.slice(0, 5).map((s, i) => <a href={s.href} class="card"><div class="media media--framed" style={`aspect-ratio:1 / 1;background:${placeholderTone(i)}`}></div><div class="kicker" style="text-align:center">{s.label}</div></a>)}
+      <a href="/sizing" class="card"><div class="media media--framed" style="aspect-ratio:1 / 1;background:var(--info);color:#fff;display:flex;align-items:center;justify-content:center;font-family:var(--font-display),sans-serif;font-weight:900;font-size:40px">→</div><div class="kicker" style="text-align:center">Sizing guides</div></a>
     </div>
   </section>
+
+  {others.length > 4 && (
+    <section class="wrap" style="padding-top:48px;display:flex;flex-direction:column;gap:20px">
+      <div class="rule" style="display:flex;align-items:baseline;justify-content:space-between;gap:16px;flex-wrap:wrap;padding-bottom:8px">
+        <div class="kicker">Latest</div>
+        <a href="/patios" class="kicker" style="font-size:12px;font-weight:600;color:var(--info);text-decoration:none">Everything →</a>
+      </div>
+      <div class="grid grid--4">{others.slice(4, 12).map((p, i) => <PostCard post={p} i={i} />)}</div>
+    </section>
+  )}
+
+  {cta && (
+    <section class="wrap" style="padding-top:48px">
+      <div class="box box--ink" style="padding:40px;display:flex;flex-wrap:wrap;gap:32px;align-items:center">
+        <div style="flex:1 1 360px;display:flex;flex-direction:column;gap:10px">
+          <div class="eyebrow" style="color:#A9C3B1">The planner · coming soon</div>
+          <div style="font-family:var(--font-display),sans-serif;font-weight:900;font-size:clamp(28px,3.4vw,36px);line-height:1;text-transform:uppercase;letter-spacing:-.01em">Lay out your patio or balcony before you buy a thing</div>
+          <p style="font-size:16px;line-height:1.55;color:#D8E2DB">Printable templates to scale for eleven common footprints, a furniture size table, shopping checklists by budget, and a measuring guide. Made for renters and first-time owners.</p>
+          <a class="btn btn--accent" href={cta.href} style="align-self:flex-start;margin-top:6px">Get the planner</a>
+        </div>
+        <div style="flex:1 1 320px;aspect-ratio:4 / 3;background:#C9C2B4;border:2px solid #fff"></div>
+      </div>
+    </section>
+  )}
 </Base>
